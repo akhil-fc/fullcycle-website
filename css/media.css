@@ -1,0 +1,497 @@
+@media screen and (max-height: 550px) {
+	.section{
+		height: 600px;
+	}
+	#slide1.section .recentlyPublishedWrap{
+		height: calc(100% - 116px);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.extendedDevelopmentWrap{
+		padding:0px 30px;
+	}
+	
+	footer .footerContent.aboutUsWrap {
+			margin-bottom: 40px;
+	}
+	footer .footerCopy{
+		margin: 45px 0 20px;
+	}
+	.sectionOneWrap .extendedDevelopmentWrap h1{
+		max-width: 500px
+	}
+	.extendedDevelopmentWrap h1{
+		max-width: 385px;
+	}
+	.ghostBar{
+		display: flex;
+		bottom: 0px;
+	}
+	.clientSectionWrap .ghostBar{
+		display: none;
+	}
+	.ghostBar img{
+		height: 20px;
+	}
+
+
+}
+@media screen and (max-width: 991px) {
+	.tab-dis-none{
+		display: none;
+	}
+	.rightNavLinks{
+		width: 100%;
+		top: 76px;
+		left: 0px;
+		right: 0px;
+		margin: 0 auto;
+		height: 100%;
+		position: fixed;
+		background: #fff;
+	}
+	header .rightNavLinks ul{
+		display: flex;
+		margin-bottom: 0px;
+		list-style: none;
+		padding-left: 0px;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+		height: 100%;
+	}
+	header .navLink a{
+		font-size: 25px;
+		padding:30px 0px;	
+		opacity: .5;
+	}
+	header .navLink a:hover, header .navLink.active a, header .contactUsBtn:hover{
+		opacity: 1;
+		font-weight: 400;
+	}
+	header .contactUsBtn{
+		transition: right .25s 0s;
+		position: relative;
+		right: 0px;
+	}
+	header .toggleIcon{
+		display: block;
+		position: relative;
+		/*overflow: hidden;*/
+		margin: 0 10px 0 0;
+		padding: 0;
+		width: 26px;
+		font-size: 0;
+		text-indent: -9999px;
+		box-shadow: none;
+		border-radius: unset;
+		border: none;
+		cursor: pointer;
+		background: 0 0;
+		right: 0;
+		z-index: 5;
+		transition: right .3s 0s;
+		height: 40px;
+		margin-left: auto;
+	}
+	header .toggleIcon span{
+		display: block;
+		position: absolute;
+		top: 19px;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: #404040;
+		transition: background .3s ease;
+	}
+	header .toggleIcon span:before,header .toggleIcon span:after{
+		    position: absolute;
+		    display: block;
+		    left: 0;
+		    width: 100%;
+		    height: 2px;
+		    background-color: #404040;
+		    content: "";
+	}
+	header .toggleIcon span:before{
+		top: -10px;
+		transition: top .3s .3s,background .3s ease,-webkit-transform .3s 0s;
+		transition: top .3s .3s,transform .3s 0s,background .3s ease;
+		transition: top .3s .3s,transform .3s 0s,background .3s ease,-webkit-transform .3s 0s;
+	}
+	header .toggleIcon span:after{
+		bottom: -10px;
+		transition: bottom .3s .3s,background .3s ease,-webkit-transform .3s 0s;
+		transition: bottom .3s .3s,transform .3s 0s,background .3s ease;
+		transition: bottom .3s .3s,transform .3s 0s,background .3s ease,-webkit-transform .3s 0s;
+	}
+	.tab-dis-block{
+		display: block;
+	} 
+	.contactUsBtn.show{
+		right:-150px;
+	}
+	header{
+		overflow: hidden;
+	}
+	.toggleIcon.goRight{
+		right: -107px;
+	}
+	header .toggleIcon.goRight span,header.bg-transparent .toggleIcon.goRight span{
+		background:0 0!important;
+	}
+	header .toggleIcon.goRight span:before{
+		top: 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		transition: top .3s 0s,background .3s ease,-webkit-transform .3s .3s;
+		transition: top .3s 0s,transform .3s .3s,background .3s ease;
+		transition: top .3s 0s,transform .3s .3s,background .3s ease,-webkit-transform .3s .3s;
+	}
+	header .toggleIcon.goRight span:after{
+		bottom: 0;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		transition: bottom .3s 0s,background .3s ease,-webkit-transform .3s .3s;
+		transition: bottom .3s 0s,transform .3s .3s,background .3s ease;
+		transition: bottom .3s 0s,transform .3s .3s,background .3s ease,-webkit-transform .3s .3s;
+	}
+	.rightNavLinks {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.rightNavLinks.show {
+		opacity: 1;
+
+		visibility: visible;
+	}
+	header .contactUsBtn.tabContactUsBtn{
+		right: 0px!important;
+		position: relative;
+		display: block;
+		width: 195px;
+		height: 55px;
+		margin: 0 auto;
+		padding: 14px 0 10px;
+		border: 1px solid #404040;
+		border-radius: 2px;
+		color: #404040;
+		font-size: 25px;
+		text-decoration: none;
+		text-align: center;
+	}
+	.contactWrap{
+		position: fixed;
+		bottom: 0px;
+		margin-bottom: 30px;
+	}
+	.extendedDevelopmentWrap svg{
+		height: 42px;
+		width: 150px;
+		margin-top: 14px;
+	}
+	.clientBarDetail{
+		flex-wrap: wrap;
+	}
+	.clientBarDetail div{
+		flex: 0 0 50%;
+		max-width: 50%;
+		text-align: center;
+	}
+	.clientBarDetail{
+		justify-content: center;
+	}
+	.clientBarDetail div:last-child{
+		margin-top: 60px;
+	}	
+	.sectionTwoWrap{
+		background-image: url(../images/secondSectionTablet.jpg);
+	}
+	.blueOverlay,.darkBlueOverlay,.greenOverlay{
+		height: 100%;
+		width: 100%;
+	}
+	.blueOverlay{
+		background:transparent;
+	}
+	.greenOverlay{
+		background:transparent;
+	}
+	.overlayOrange{
+		background: rgba(237,140,61,.8);
+	}
+	.sectionTwoWrap .extendedDevelopmentWrap, .sectionThereWrap .extendedDevelopmentWrap{
+		max-width: 450px;
+	}
+	.sectionThereWrap.straightOuttaWrap .extendedDevelopmentWrap h1{
+		max-width: 365px;
+	}
+	.sectionThereWrap.straightOuttaWrap .extendedDevelopmentWrap p{
+		max-width: 290px;
+	}
+	#slideThree .sectionTwoWrap{
+		background-position:;
+	}
+	
+	.sectionThereWrap{
+		background-image: url(../images/fourthSectionTablet.jpg);
+		background-position: 1% -80px;
+	}
+	.sectionFourWrap{
+		background-image: url(../images/fifthSectionDesktop.jpg);
+		background-position: 92% 0;
+	}
+	.sectionFourWrap .clientNames{
+		display: none;
+	}
+	.sectionFourWrap .extendedDevelopmentWrap{
+		flex: 0 0 100%;
+	}
+	.droupDown .custom-droup-down{
+		display: none;
+	}
+	header.bg-transparent .toggleIcon span{
+ 		 background: #fff!important;
+	}
+	header.bg-transparent .toggleIcon span::before, header.bg-transparent .toggleIcon span::after {
+	  background: #fff!important;
+	}
+	.allBannerSection{
+		max-height: 650px;
+		height: 650px;
+	}
+	.bannerImage img{
+		max-height: 43vh;
+		vertical-align: middle;
+	}
+	.bannerImage{
+		right: 0px;
+		width: 100%;
+		text-align: right;
+	}
+
+	.allBannerSection,.notTypicalWrap,.commonGap,.fourStepsWrap{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.checkboxLine{
+		width: 20px;
+	}
+	.checkboxLine:after,.checkBoxesContainer .lineTop::before,.checkboxLine.lineBtm:before{
+		left: 9px;
+	}
+	.fourStepsWrap{
+		padding-top: 50px;
+	}
+	.notTypicalWrap{
+		padding-bottom: 40px;
+	}
+	.fourStepImageWrap img{
+		bottom: -60px;
+	}
+	.numberLine span{
+		width: 20px;
+		height: 20px;
+	}
+	.numberLine::after{
+		left: 9px;
+	}
+	.colorSquare > div{
+		font-size: 16px;
+		padding: 10px 5px;
+	}
+	.sectionTechnologies .sectionInner > div,.fourStepLeftColumn, .fourStepRightColum,.checkBoxGrid{
+		width: calc(50% - 30px);
+	}
+
+
+}
+@media screen and (max-width: 767px) {
+	.mobile-dis-none{
+		display: none;
+	}
+	.mobile-dis-block{
+		display: block;
+	}
+	.toggleIcon.goRight {
+    	right: 0px;
+	}
+	.toggleIcon{
+		margin-right: 0px;
+	}
+	header{
+		padding: 15px 20px;
+	}
+	header .navLink a{
+		font-size: 20px;
+	}
+	header .rightNavLinks ul{
+		padding-top: 20px;
+	}
+	header .navLink a{
+		padding: 6px 0px;
+	}
+	.extendedDevelopmentWrap h1{
+		font-size: 31px;
+	}
+	.extendedDevelopmentWrap{
+		padding: 0px 20px;
+	}
+	.extendedDevelopmentWrap p{
+		max-width: 300px;
+	}
+	.clientSectionWrap{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.clientBarDetail div{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 60px;	
+	}
+	.clientBarDetail div:first-child{
+		margin-top:0px;
+	}
+	.extendedDevelopmentWrap h1{
+		max-width: 280px;
+	}
+	.sectionTwoWrap{
+		background-image:url('../images/secondSectionMobile.jpg');
+		background-position: bottom;
+		background-size: cover;
+		
+	}
+	#slideThree .extendedDevelopmentWrap h1{
+		max-width: 240px;
+	}
+	.extendedDevelopmentWrap p{
+		width: 100%;
+	}
+	.sectionThereWrap.straightOuttaWrap .extendedDevelopmentWrap h1{
+		max-width: 300px;
+	}
+	footer{
+		padding-left: 20px;
+		padding-right:20px;
+	}
+	footer .aboutUsWrap{
+		width: 85%;
+		margin-bottom: 30px;
+		max-width: 100%;
+	}
+	footer .linksWrap{
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	footer .locationWrap{
+		flex-direction: column;
+	}
+	footer .divider{
+		border-top: 1px solid #d8d8d8;
+		border-left: 0px;
+		border-right: 0px;
+		margin: 15px 0px;	
+		width: 100%;
+	}
+	footer .contactBoxes{
+		flex: auto;
+		max-width: 100%;
+	}
+	footer .footerCopy{
+		margin:20px 0 10px;
+	}
+	.recentlyPublishedWrap .title .mobile-dis-block{
+		display: inline-block;
+	}
+	.recentlyPublishedWrap .innerwrap{
+		padding: 12px 10px;
+	}
+	footer .contactBoxes p{
+		margin-bottom: 0px;
+	}
+	.clientBarDetail img{
+		height: 34px;
+	}
+	.allBannerSection{
+		height: 100vh;
+		max-height: 100vh;
+	}
+	.allBannerSection .pageTitle{
+		font-size: 31px;
+		max-width: 310px;
+	}
+	.allBannerSection .preDescription{
+		width: 100%;
+		max-width: 300px;
+	}
+	.bannerImage img{
+		height: 37vh;
+	}
+	.allBannerSection .arrowWrap{
+		bottom: 40px;
+	}
+	.subNavWrap{
+		padding: 0px 5px;
+	}
+	.allBannerSection, .notTypicalWrap, .commonGap, .fourStepsWrap{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.notTypicalGrid,.sectionTechnologies .sectionInner > div, .fourStepLeftColumn, .fourStepRightColum, .checkBoxGrid{
+		max-width: calc(100% - 0px);
+		width: calc(100% - 0px);
+	}
+	.checkBoxesMain,.fourStepInner,.sectionTechnologies .sectionInner{
+		flex-wrap: wrap;
+	}
+	.checkBoxesContainer .lineTop:before,.checkBoxesContainer .lineTop:before{
+		content: none;
+	}
+	.mobile-dis-block{
+		display: block;
+	}
+
+
+
+}
+@media screen and (max-width: 340px) {
+	.readOurGuideBtn{
+		font-size: 13px;
+		margin-left: 6px;
+		width: 114px;
+	}
+	.recentlyPublishedWrap .innerwrap svg{
+		height: 13px !important;
+		width: 55px;
+	}
+	.clientSectionWrap,.extendedDevelopmentWrap,.recentlyPublishedWrap .innerwrap{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.extendedDevelopmentWrap p{
+		font-size: 16px;
+		max-width: 265px;
+	}
+	.extendedDevelopmentWrap h1{
+		font-size: 28px;
+	}
+	#menu{
+		right: 30px;
+	}
+	.extendedDevelopmentWrap h1{
+		max-width: 200px;
+	}
+	#slideThree .extendedDevelopmentWrap h1{
+		max-width: 230px;
+	}
+	.sectionThereWrap.straightOuttaWrap .extendedDevelopmentWrap h1{
+		max-width: 280px;
+	}
+	.sectionFourWrap .extendedDevelopmentWrap h1{
+		max-width: 240px;
+	}
+
+}
