@@ -875,6 +875,7 @@ justify-content: space-between;
 
 .whatWeDoWrap{
   border:1px solid #d8d8d8;
+  overflow: hidden;
 }
 .whatWeDoWrap .yourDeveloperGradient{
   background-image: linear-gradient(125deg,#3d6387,#739ec6);

@@ -243,34 +243,28 @@
         </script>
         <script >
             $(function(){
-              $('.top').each(function() {
+              $('.allBannerSection, .polandImageWrap').each(function() {
                 var off = $(this).offset().top
                 $(this).data('orig-offset', off);
               });
               $(window).scroll(function(){
                 var scrollTop = $(window).scrollTop();
 
-                 $('.top').each(function(){
+                 $('.allBannerSection, .polandImageWrap').each(function(){
                   var off = $(this).data('orig-offset');                
                    
                   if (scrollTop >= off) {
                     var translate =  (scrollTop - off) / $(window).height() * 100;
-                    console.log(translate);
-                    $(this).css({transform: 'translateY(' + translate +'%)'});
+                    var opacity = 1 - (2*scrollTop / 1000);
+                    console.log(opacity);
+                    $(this).css({transform: 'translateY(' + translate +'px)'});
+                    $(this).css('opacity', opacity);
                   }
                  });
               });
             });
-        </script>
-        <script >
-          var sdegree = 0;
-            $(window).scroll(function() { 
-               sdegree ++ ;
-               sdegree = sdegree + 2 ;
-                console.log(sdegree);  
-                var translate = "translateY(" + sdegree + "px)";
-                $(".allBannerSection ").css({"transform" : translate});
-            });
+ // 1 - Math.min(2 * o, 1),
+            
         </script>
     </body>
 
