@@ -38,7 +38,7 @@
             </div>
             <div class="rightNavLinks tab-dis-none">
                <ul class="">
-                  <li class="navLink active">
+                  <li class="navLink ">
                      <a href="#">What We Do</a>
                   </li>
                   <li class="navLink">
@@ -320,10 +320,6 @@
           &copy; All rights reserved Sofomo 
         </div>
       </footer>
-     <!-- <script >
-       $.stellar();        
-    </script>  -->
-      
       <script src="js/jquery-1.10.2.min.js"></script>
       <script src="js/wow.min.js"></script>
       <script src="js/custom.js"></script> 
@@ -345,40 +341,8 @@
           });
                                   
         });
-      </script> 
-     
-      <script >
-         $(function() {
-    $(window).on('scroll',function(){
-        var WindowTop = $(window).scrollTop();
-        $('.section').each(function(i){
-            if(WindowTop > $(this).offset().top - 79 && 
-               WindowTop < $(this).offset().top + $(this).outerHeight(true)
-              ){
-                $('#menu li a').removeClass('active');
-               $('#menu li').eq(i).find('a').addClass('active');
-            }
-        });
-    });
-        $('a[href*=#]:not([href=#])').click(function() {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-           var target = $(this.hash);
-           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-           }
-         }
-        });
-    
-    
-    
-      });
       </script>
-      <script>
-         
+      <script>         
          $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();
             if(scroll < 100){
@@ -387,8 +351,7 @@
             }
             else{
                $(".clientSectionWrap .ghostBar").css("transform", "translateY(0px)", "opacity", "0");
-               $(".clientSectionWrap .ghostBar > div img").css("transform", "scale(0)")
-               
+               $(".clientSectionWrap .ghostBar > div img").css("transform", "scale(0)")               
             }
          });
       </script>

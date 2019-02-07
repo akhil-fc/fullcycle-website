@@ -6,6 +6,42 @@
 		height: calc(100% - 116px);
 	}
 }
+@media screen and (min-width: 1300px){
+	.leaderCaption .leaderCaptionText:last-child {
+    	padding-left: 104px;
+	}
+	.leaderCaption .leaderCaptionText:first-child{
+		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.leaderCaption{
+		max-width: 465px;
+		width: 56%;
+	}
+	.leaderCaption .leaderCaptionText:first-child{
+		padding-left: 21%;
+	}
+	.leaderCaption .leaderCaptionText:last-child{
+		padding-left: 15%;
+	}
+	.leaderCaption{
+		max-width: 465px;
+		width: 56%;
+	}
+	.leaderMainCaptionContainer{
+		left: 0px;
+		top:auto;
+		bottom: 0px;
+		background-color: transparent;
+		background-image: linear-gradient(270deg,#f6f5f6,hsla(300,5%,96%,.72) 44%,hsla(300,5%,96%,0) 60%,hsla(300,5%,96%,0));
+		padding: 5px 0 5px 30px;
+	}
+	.sliderContentWrap{
+		width: 100%;
+		max-width: 508px;
+	}
+}
 @media screen and (max-width: 1024px) {
 	.extendedDevelopmentWrap{
 		padding:0px 30px;
@@ -33,7 +69,47 @@
 	.ghostBar img{
 		height: 20px;
 	}
+	.lederShipWrap .bgImageWrap{
+		background-image: url(../images/boards-tablet.png);
+		background-size: auto 90%;
+		background-position: right 88% top 60px;
+		max-width: 465px;
+		min-height: 494px;
 
+	}
+	#Leadership .ourStoryInner .ourStoryColumn:nth-child(2){
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+	#Leadership .ourStoryInner .ourStoryColumn:first-child{
+		width: 44%;
+	}
+	#Leadership .ourStoryInner{
+		left: 0px;
+	}
+	#Story .ourStoryInner{
+		padding-left: 15px;
+		padding-right: 15px;
+		left: 15px;
+	}
+	#Story .ourStoryColumn:first-child{
+		width: calc(55% - 12.5px);
+	}
+	#Story .ourStoryColumn:nth-child(2){
+		width: calc(45% - 12.5px);
+	}
+	#Story .ourStoryInner .bgImageWrap{
+		background-position: 43%;
+	}
+	.lederShipWrap .bgImageWrap{
+		margin-left: auto;
+	}
+	#Leadership .ourStoryInner{
+		padding-right: 0px;
+	}
+
+	
 
 }
 @media screen and (max-width: 991px) {
@@ -124,6 +200,9 @@
 		transition: bottom .3s .3s,background .3s ease,-webkit-transform .3s 0s;
 		transition: bottom .3s .3s,transform .3s 0s,background .3s ease;
 		transition: bottom .3s .3s,transform .3s 0s,background .3s ease,-webkit-transform .3s 0s;
+	}
+	header.bg-transparent.bg-white{
+
 	}
 	.tab-dis-block{
 		display: block;
@@ -255,8 +334,17 @@
 	header.bg-transparent .toggleIcon span{
  		 background: #fff!important;
 	}
+	header.bg-transparent.bg-white .toggleIcon span {
+    	background: #404040 !important;
+	}
+	header.bg-transparent.bg-white .toggleIcon span:before, header.bg-transparent.bg-white .toggleIcon span:after{
+		background: #404040 !important;
+	}
 	header.bg-transparent .toggleIcon span::before, header.bg-transparent .toggleIcon span::after {
 	  background: #fff!important;
+	}
+	header.bg-white .toggleIcon.goRight span{
+		background: #fff!important;
 	}
 	.allBannerSection{
 		max-height: 650px;
@@ -305,8 +393,44 @@
 	.sectionTechnologies .sectionInner > div,.fourStepLeftColumn, .fourStepRightColum,.checkBoxGrid{
 		width: calc(50% - 30px);
 	}
-
-
+	.yourDeveloperGradient .allBannerSection{
+		background-image: url(../images/developers-small.png);
+		background-position: right bottom;
+		background-size: auto;		
+	}
+	.allBannerSection .preDescription{
+		width: 66%;
+		max-width: 400px;
+	}
+	.fullyDedicatedText {
+    	width: 100%;
+	}
+	.fullyDedicatedWrap{
+		padding-bottom: 50vw;
+	}
+	.skillBlock {
+    	width: calc(50% - 30px);
+	}
+	.skillBlock ul li .tab-dis-block{
+		display: inline-block;
+	}
+	header.bg-transparent .rightNavLinks  .navLink a:hover, 
+	header.bg-transparent .rightNavLinks  .navLink.active a, header.bg-transparent .rightNavLinks  .contactUsBtn:hover,
+	header.bg-transparent .rightNavLinks  .navLink a{
+		color: #404040!important;
+	}
+	.aboutPolandContainer .aboutPolandBox {
+    	width: calc(50% - 30px);
+	}
+	.aboutPolandContainer .aboutPolandBox:not(:last-child){
+		margin-bottom:60px;
+	}
+	.map__layer___31Zk2 {
+    	background-size: 155%;
+	}
+	.aboutUsContainer .bannerDetail{
+		width: 62%;
+	}
 }
 @media screen and (max-width: 767px) {
 	.mobile-dis-none{
@@ -372,6 +496,17 @@
 	.sectionThereWrap.straightOuttaWrap .extendedDevelopmentWrap h1{
 		max-width: 300px;
 	}
+	.yourDeveloperGradient .allBannerSection{
+		background-position: right bottom;
+		background-size: 53%;
+	}
+	.polandImageWrap{
+		right: -129px;
+	}
+	.allBannerSection .pageTitle{
+		max-width: 610px;
+	}
+
 	footer{
 		padding-left: 20px;
 		padding-right:20px;
@@ -440,7 +575,8 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.notTypicalGrid,.sectionTechnologies .sectionInner > div, .fourStepLeftColumn, .fourStepRightColum, .checkBoxGrid{
+	.notTypicalGrid,.sectionTechnologies .sectionInner > div, .fourStepLeftColumn, .fourStepRightColum, .checkBoxGrid,
+	.personalContainer > div{
 		max-width: calc(100% - 0px);
 		width: calc(100% - 0px);
 	}
@@ -453,9 +589,172 @@
 	.mobile-dis-block{
 		display: block;
 	}
-
-
-
+	.skillBlock{
+		width: calc(100% - 0px);
+	}
+	.skillBlock:nth-child(2){
+		margin-top: 60px;
+	}
+	
+	.fulldelicatedMemberWrap .owl-carousel .owl-nav{
+		bottom: auto;
+		top: 15px;
+	}
+	.fulldelicatedMemberWrap .slide1{
+		background:url(../images/dev1-small.png);
+		background-repeat: no-repeat;
+		background-position:top center;
+	}
+	.fulldelicatedMemberWrap .sliderWrap .item{
+		height: 495px;
+	}
+	.fulldelicatedMemberWrap .slide2{
+		background-size: cover;
+	}
+	.fulldelicatedMemberWrap .slide3{
+		background-size: cover;
+		background-position: 16%;
+	}
+	.personalContainer{
+		flex-wrap: wrap;
+	}
+	.commonh3{
+		font-size: 16px;
+	}
+	.instagramImageWrap{
+		margin-top: 60px;
+	}
+	.aboutPolandContainer .aboutPolandBox{
+		width: calc(100% - 0px);
+	}
+	.aboutPolandContainer .aboutPolandBox:not(:last-child){
+		margin-bottom: 40px;
+	}
+	.map__container___-jn8h {
+	    height: calc(100vh - 50px);
+	    max-height: auto;
+	}
+	.map__layer___31Zk2 {
+    	background-size: cover;
+	}
+	.mapContainer {
+	    padding-top: 40px;
+	    padding-bottom: 0px;
+	}
+	.polandImageWrap{
+		right: 0px;
+	}
+	.aboutUsContainer .bannerDetail{
+		width: 100%;
+	}
+	.allBannerSection.aboutUsContainer {
+		flex-wrap: wrap;
+	}
+	.allBannerSection.aboutUsContainer .bannerDetail{
+		height: auto;
+	}
+	.aboutBannerImageWrap{
+		width: 100%;
+	}
+	.aboutBannerImageWrap img{
+		height: auto;
+	}
+	.aboutUsContainer{
+		align-items: unset;
+	}
+	.aboutUsContainer{
+		padding-top: 90px;
+	}
+	.allBannerSection.aboutUsContainer .arrowWrap{
+		display: none;
+	}
+	.establisText{
+		margin-bottom: 20px;
+	}
+	.ourStoryInner{
+		left: 0px;
+	}
+	.ourStoryColumn{
+		width: 100%;
+	}
+	.ourStoryInner .bgImageWrap{
+		height: 82.9vw;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+	}
+	.ourStoryInner{
+		padding-left: 0px;
+		padding-right: 0px; 
+	}
+	.ourStoryColumn:first-child{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.lederShipWrap .ourStoryColumn{
+		width: 100%;
+	}
+	.lederShipWrap{
+		margin-top:0px;
+	}
+	.empoweringCompaniesSlide .companiesContentBox{
+		width: 100%;
+	}
+	.empoweringCompaniesSlide .companiesImageBox{
+		display: none;
+	}
+	#Leadership .ourStoryInner .ourStoryColumn:first-child{
+		width: 100%;
+	}
+	.lederShipWrap .bgImageWrap{
+		max-width: 100%;
+	}
+	#Leadership .ourStoryInner .bgImageWrap{
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: left 52% bottom 0;
+		background-size: auto 98%;
+		width: 100%;
+	}
+	.leaderCaption .leaderCaptionText:last-child{
+		padding-left: 0px;
+		margin-left: auto;
+	}
+	.leaderCaption .leaderCaptionText:first-child{
+		padding-left: 0px;
+	}
+	.leaderMainCaptionContainer{
+		padding:5px 20px 5px 20px;
+	}
+	.leaderCaption{
+		max-width: 100%;
+		width: 100%;
+	}
+	#Leadership .ourStoryInner .ourStoryColumn:nth-child(2){		
+		height: 88vw;
+	}
+	#Story .ourStoryColumn:first-child,#Story .ourStoryInner .bgImageWrap{
+		width: 100%;
+	}
+	#Story .ourStoryInner{
+		padding-left: 0px;
+		padding-right: 0px;
+		left: 0px;
+	}
+	.allBannerSection .pageTitle{
+		max-width: 100%;
+	}
+	.faqWrap{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 120px;
+	}
+	.faqWrap .faqDescrip{
+		width: 100%;
+	}
+	.faqTopWrap{
+		margin-bottom: 50px;
+	}
 }
 @media screen and (max-width: 340px) {
 	.readOurGuideBtn{
