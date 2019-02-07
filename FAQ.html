@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
     <body>
-        <header id="header" class="">
+        <header id="header" class="boxShadowOnScroll">
             <nav>
                 <div class="logoWrap">
                     <a href="#">
@@ -93,7 +93,7 @@
                 </ul>
             </div>
         </header>
-        <div class="faqWrap">
+        <div class="faqWrap" id="faqMain">
             <div class="faqTopWrap">
                 <h1 class="faqTitle">Hi. Still have questions?</h1>
                 <p class="faqDescrip">Here are just a few of things companies frequently ask about Sofomo. If you don’t see your question here, <a href="#" >get in touch with us</a>.</p>
@@ -206,12 +206,8 @@
                         <p>While Sofomo does not bind clients to long-term contracts, our goal is to work with innovative businesses who will maintain their development team for the long-term and grow their team over time. </p>                        
                     </div>
                 </div>
-                
-                
             </div>
         </div>
-        
-      
         <footer>
             <div class="footerContent aboutUsWrap">
                 <h4>About Us</h4>
@@ -276,24 +272,12 @@
                 &copy; All rights reserved Sofomo
             </div>
         </footer>
-        
-
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        
+        <script src="js/custom.js"></script>        
         <script>
             new WOW().init();
-        </script>
-        <script >
-            $(document).ready(function(){
-                $(".singleFaqQuestions > a").click(function(){                     
-                    $(this).toggleClass("showAnswer");                    
-                    $(this).parent().find(".singleFaqAnswer").toggleClass("show");
-                });
-            });
         </script>
     </body>
 

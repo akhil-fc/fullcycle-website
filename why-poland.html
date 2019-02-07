@@ -1,6 +1,5 @@
     <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <title>why-poland</title>
         <meta charset="UTF-8">
@@ -13,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="css/animate.css">
     </head>
     <body>
-        <header id="header" class="bg-transparent">
+        <header id="header" class="bg-transparent ">
             <nav>
                 <div class="logoWrap">
                     <a href="#">
@@ -233,39 +232,13 @@
             $(window).scroll(function (event) {
                   var scroll = $(window).scrollTop();
                   $('.subNavigation ').toggleClass('fixed',               
-                    scroll >= $('#Dedicated').offset().top - 75
+                    scroll >= $('#Dedicated').offset().top - 130
                   );
-                  $('header ').toggleClass('bg-white',               
-                    scroll >= $('#Dedicated').offset().top -75
+                  $('header ').toggleClass('bg-white box-shadow',               
+                    scroll >= $('#Dedicated').offset().top -130
                   );
               });          
             $(window).scroll();
         </script>
-        <script >
-            $(function(){
-              $('.allBannerSection, .polandImageWrap').each(function() {
-                var off = $(this).offset().top
-                $(this).data('orig-offset', off);
-              });
-              $(window).scroll(function(){
-                var scrollTop = $(window).scrollTop();
-
-                 $('.allBannerSection, .polandImageWrap').each(function(){
-                  var off = $(this).data('orig-offset');                
-                   
-                  if (scrollTop >= off) {
-                    var translate =  (scrollTop - off) / $(window).height() * 100;
-                    var opacity = 1 - (2*scrollTop / 1000);
-                    console.log(opacity);
-                    $(this).css({transform: 'translateY(' + translate +'px)'});
-                    $(this).css('opacity', opacity);
-                  }
-                 });
-              });
-            });
- // 1 - Math.min(2 * o, 1),
-            
-        </script>
     </body>
-
-    </html>
+</html>

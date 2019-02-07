@@ -1293,6 +1293,9 @@ flex-wrap: wrap;
   height: 70%;
   width: 100%;
 }
+header.box-shadow{
+  box-shadow: 0 2px 4px rgba(0,0,0,.03);
+}
 header.bg-transparent.bg-white{
   background: #fff!important;
 }

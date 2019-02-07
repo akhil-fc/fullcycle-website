@@ -33,6 +33,29 @@ $(function() {
 	     }
 	    }); 
 	    // end
+	    // banner translate effect
+	    	$(function(){
+              $('.allBannerSection, .polandImageWrap').each(function() {
+                var off = $(this).offset().top
+                $(this).data('orig-offset', off);
+              });
+              $(window).scroll(function(){
+                var scrollTop = $(window).scrollTop();
+
+                 $('.allBannerSection, .polandImageWrap').each(function(){
+                  var off = $(this).data('orig-offset');                
+                   
+                  if (scrollTop >= off) {
+                    var translate =  (scrollTop - off) / $(window).height() * 100;
+                    var opacity = 1 - (3*scrollTop / 1000);
+                    console.log(opacity);
+                    $(this).css({transform: 'translateY(' + translate +'px)'});
+                    $(this).css('opacity', opacity);
+                  }
+                 });
+              });
+            });        
+	    // end
 
         // animation header menu mobile
 			$("#menu a").click(function() {
@@ -87,6 +110,23 @@ $(function() {
 		                        }
 		                    }
 		               	})
+		        // end
+		        // custom accordion 
+		        	 $(".singleFaqQuestions > a").click(function(){                     
+	                    $(this).toggleClass("showAnswer");                    
+	                    $(this).parent().find(".singleFaqAnswer").toggleClass("show");
+                	});
+		        // end
+		        // add box shadow to header
+		        	$(window).scroll(function() {    
+		                var scroll = $(window).scrollTop();                 
+		                    if (scroll >= 100) {
+		                        $(".boxShadowOnScroll").css("box-shadow", "0 2px 4px rgba(0,0,0,.03)");
+		                    }
+		                    else{
+		                        $(".boxShadowOnScroll").css("box-shadow", "0 0px 0px rgba(0,0,0,.03)");
+		                    }
+		            }); 
 		        // end
 
       });

@@ -331,26 +331,14 @@
         $(window).scroll(function (event) {
               var scroll = $(window).scrollTop();
               $('.subNavigation ').toggleClass('fixed',               
-                scroll >= $('#Dedicated').offset().top - 75
+                scroll >= $('#Dedicated').offset().top - 230
               );
               $('header ').toggleClass('bg-white',               
-                scroll >= $('#Dedicated').offset().top -75
+                scroll >= $('#Dedicated').offset().top - 230
               );
           });         
     </script>
-    <!-- transform on scroll test -->
-    <!-- <script >
-      var sdegree = 0;
-        $(window).scroll(function() { 
-           sdegree ++ ;
-           sdegree = sdegree + 2 ;
-            console.log(sdegree);  
-            var translate = "translateY(" + sdegree + "px)";
-            $(".allBannerSection ").css({"transform" : translate});
-        });
-    </script> -->
     
-    <!-- end -->
 </body>
 
 </html>
