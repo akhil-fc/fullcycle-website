@@ -1,3 +1,4 @@
+
 @media screen and (max-height: 550px) {
 	.section{
 		height: 600px;
@@ -12,6 +13,12 @@
 	}
 	.leaderCaption .leaderCaptionText:first-child{
 		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.carrersBannerWrap .aboutUsContainer .bannerDetail{
+	  width: auto;
+	  max-width: 650px; 
 	}
 }
 @media screen and (max-width: 1200px) {
@@ -108,8 +115,29 @@
 	#Leadership .ourStoryInner{
 		padding-right: 0px;
 	}
-
-	
+	.questionWrap{
+		flex-wrap: wrap;
+		width: 100%;
+		padding-bottom: 50px;
+	}
+	.questionWrap .leftColumn,.questionWrap .rightColumn{
+		max-width: 100%;
+		flex: 0 0 100%;
+		padding: 0px 0px 0px 80px;
+	}
+	.jobListing .jobFDetail > div{
+		height: auto;
+	}
+	.jobListing .jobFDetail{
+		flex: 0 0 100%;
+		max-width: 100%
+	}
+	.featuredJobs{
+		padding: 100px 0 110px 0;
+	}
+	.testimonial {
+    	padding: 50px 0 0 0;
+	}	
 
 }
 @media screen and (max-width: 991px) {
@@ -430,6 +458,67 @@
 	}
 	.aboutUsContainer .bannerDetail{
 		width: 62%;
+	}
+	.carrersBannerWrap .aboutUsContainer .bannerDetail{
+		width: auto;
+		max-width: 580px;
+	}
+	.carrersBannerWrap .allBannerSection .preDescription{
+		width: 100%;
+		max-width: 100%;
+	}
+	.ourIdeas .grid{
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-bottom: 30px;
+	}
+	.ourIdeas .innerGridWrap{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header.bg-transparent.bg-white .contactUsBtn{
+		border:1px solid #404040;
+		color: #404040;
+	}
+	.carrersStoryWrap .columnsWrap .column:first-child{
+		max-width: 100%;
+		order:2;
+	}
+	.carrersStoryWrap .columnsWrap .column:last-child {
+    	max-width: 100%;
+    	order:1;
+	}
+	.carrersStoryWrap .columnsWrap{
+		flex-wrap: wrap;
+	}
+	.carrersStoryWrap .columnsWrap .column .imageWrap{
+		padding-top: 0px;
+	}
+	.carrersStoryWrap h2{
+		font-size: 35px;
+		margin-bottom: 15px;
+		text-align: center;
+		padding-bottom: 0px;
+	}
+	.carrersStoryInnerWrapper p.commonDetailPara,.carrersStoryWrap .columnsWrap .column .caption{
+		text-align: center;
+	}
+	.carrersStoryWrap .columnsWrap .column .caption br{
+		display: none;
+	}
+	.carrersStoryWrap{
+		padding-bottom: 70px;
+	}
+	.brilliantWrap h4{
+		height: auto;
+		min-height: 140px;
+		padding-bottom: 30px;
+		font-size: 36px;
+		line-height: 36px;
+		padding-left: 85px;
+		padding-right: 85px;
+		width: 788px;
+		max-width: 74%;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -754,6 +843,124 @@
 	}
 	.faqTopWrap{
 		margin-bottom: 50px;
+	}
+	.carrersBannerWrap .aboutUsContainer{
+		padding-top: 0px;
+		height: auto;
+	}
+	.carrersBannerWrap{
+		height: 470px;
+	}
+	.carrersBannerWrap .aboutUsContainer .bannerDetail,.carrersBannerWrap .aboutUsContainer.allBannerSection {
+		height: 100%;
+	}
+	.carrersBannerWrap .allBannerSection .pageTitle{
+		font-size: 45px;
+	}
+	.carrersBannerWrap .allBannerSection .preDescription{
+		font-size: 14px;
+	}
+	.ourIdeas .grid{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+	.ourIdeas .wrapper{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.carrersStoryWrap .containerCommon{
+		padding-left: 20px;
+		padding-right: 20px
+	}
+	.carrersStoryInnerWrapper p.commonDetailPara{
+		font-size: 14px;
+		font-weight: 300;
+	}
+	.testiminialWrapper .singleFaqQuestions a{
+		font-size: 16px;
+	}
+	.testiminialWrapper .singleFaqAnswer p {
+	    color: #767676;
+	    font-weight: 300;
+	    margin-bottom: 10px;
+	    font-size: 13px;
+	    line-height: 16px;
+	}
+	.featuredJobs {
+    	padding: 40px 0 40px 0;
+	}
+
+
+}
+@media screen and (max-width: 520px){
+	.carrersBannerWrap .aboutUsContainer .bannerDetail{
+		max-width: 300px;
+	}
+	.carrersStoryWrap .containerCommon{
+		padding-left: 10px;
+		padding-right: 10px
+	}
+	.brilliantWrap h4{
+		width: 100%;
+		height: 164px;
+		line-height: 26px;
+		font-size: 26px;
+		max-width: 300px;
+		padding: 35px 45px 0 35px;
+	}
+	.brilliantWrap{
+		height: 326px;
+	}
+	.siliconWrapper{
+		padding: 0 10px;
+	}
+	.siliconSection h3{
+		font-size: 25px;
+		line-height: 26px;
+		padding-bottom: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.siliconSection p {
+	    margin-bottom: 25px;
+	    font-size: 15px;
+	    line-height: 22px;
+	}
+	.testiminialWrapper h3{
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.testiminialWrapper{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.questionWrap .leftColumn, .questionWrap .rightColumn{
+		padding: 0px 0px 0px 20px;
+
+	}
+	.featuredJobs h3{
+		font-size: 25px;
+	}
+	.featuredWrapper .featuresubHeading{
+		font-size: 18px;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 27px;
+	}
+	.jobListing{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.jobListing .jobFDetail > div{
+		padding: 20px;
+	}
+	.jobListing .jobFDetail > div p:last-child{
+		text-align: center;
 	}
 }
 @media screen and (max-width: 340px) {

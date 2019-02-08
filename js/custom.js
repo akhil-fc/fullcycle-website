@@ -48,7 +48,7 @@ $(function() {
                   if (scrollTop >= off) {
                     var translate =  (scrollTop - off) / $(window).height() * 100;
                     var opacity = 1 - (3*scrollTop / 1000);
-                    console.log(opacity);
+                    // console.log(opacity);
                     $(this).css({transform: 'translateY(' + translate +'px)'});
                     $(this).css('opacity', opacity);
                   }
