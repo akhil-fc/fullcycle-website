@@ -472,6 +472,9 @@ position: absolute;
   line-height: 30px;
   transition: opacity .4s;
  }
+ .custom-droup-down ul li a.active{
+    opacity: 1;
+ }
  .whatWeDoWrap .gredientWrap{
   background-image: radial-gradient(circle at 50% -13%,#04a9b9 4%,#178abd 50%,#1470b4);
   background-repeat: no-repeat,no-repeat,no-repeat;
@@ -1902,6 +1905,228 @@ line-height: 66px;
 .slideToViewJobs.display-none{
   display: none;
 }
+.ContactTop {
+    min-height: 580px;
+    position: relative;
+    text-align: center;
+}
+.ContactTop-backgroundImage {
+    background: url(../images/bg-contact.jpg) center center no-repeat;
+    background-size: auto;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.ContactTop-backgroundImage--blured {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    display: block;
+    z-index: 0;
+}
+.ContactTop-textBox {
+    max-width: 600px;
+}
+.ContactTop-textBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: #fff;
+    width: 90%;
+    z-index: 2;
+}
+.ContactTop-title {
+    font-size: 40px;
+}
+.ContactTop-title {
+    color: #fff;
+    font-family: proxima-nova,proxima nova,sans-serif;
+    font-weight: 600;
+    line-height: 1.1em;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 1.12px;
+}
+.ContactTop-subtitle {
+    font-size: 27px;
+}
+.ContactTop-subtitle {
+    font-family: proxima-nova,proxima nova,sans-serif;
+    font-weight: 300;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+.ContactTop-divider {
+    height: 3px;
+    background-color: #fff;
+    max-width: 33%;
+    margin: 0 auto;
+}
+
+.ContactOuter {
+    max-width: 96%;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    z-index: 3;
+}
+.ContactOuter {
+    margin: 0 80px;
+}
+.ContactMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-shadow: 0 2px 16px rgba(0,0,0,.18);
+    background-color: #fff;
+}
+.ContactSection {
+    background-color: #3b3b3b;
+    padding: 20px 20px 15px;
+    padding-top: 10px;
+    width: 280px;
+}
+.ContactMain-contact {
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.ContactBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.ContactBox-textSection {
+    line-height: 1.5em;
+    font-size: 14px;
+    margin-right: 15px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.ContactBox-highlight {
+    font-weight: 700;
+    color: #fff;
+}
+.ContactBox-content {
+    color: #d3d3d3;
+    padding-bottom: 0;
+}
+.ContactBox-image > img {
+    width: 50px;
+}
+.ContactBox-imageText {
+    display: none;
+}
+.ContactBoxes-divider {
+    border-bottom: 1px solid #d8d8d8;
+    margin: 25px 25px 25px 0;
+}
+.ContactMain-formSection {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.ContactMain-form {
+    width: 550px;
+    margin: 40px auto;
+    max-width: 96%;
+    position: relative;
+}
+.FormSection {
+    position: relative;
+}
+.Form > p {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+.InputText {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: proxima-nova,proxima nova,sans-serif;
+    border: 1px solid transparent;
+    outline: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 15px;
+    color: #424242;
+}
+.TextArea {
+    font-weight: 600;
+    font-family: proxima-nova,proxima nova,sans-serif;
+    border: 1px solid transparent;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    background-color: #f7f7f7;
+    color: #424242;
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    min-height: 100px;
+}
+.FormButton {
+    font-weight: 600;
+    font-family: proxima-nova,proxima nova,sans-serif;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    color: #6d6d6d;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    font-size: 17px;
+    cursor: default;
+}
+.InputText:focus{
+  background-color: #fff;
+  border-color: #979797;
+}
+.slide2,.slide1,.slide3{
+  overflow: hidden;
+  position: relative;
+}
+.sliderContentWrap  {
+    position: absolute;
+    left: -100%;    
+    
+}
+.sliderContentWrap.animation-left  {
+  -webkit-animation: slide 0.2s forwards;
+    -webkit-animation-delay: .3s;
+    animation: slide 0.2s forwards;
+    animation-delay: .3s;
+}
+@-webkit-keyframes slide {
+    100% { left: 20px; }
+}
+
+@keyframes slide {
+    100% { left: 20px}
+}
+
+
 
 footer p,footer a{
   font-size: 15px;

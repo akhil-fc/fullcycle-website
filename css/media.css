@@ -520,6 +520,18 @@
 		width: 788px;
 		max-width: 74%;
 	}
+	.ContactOuter {
+   		 margin: 0 auto;
+	}
+	.ContactMain-form{
+		width: auto;
+		margin: 50px;
+	}
+	.ContactTop {
+	    min-height: 340px;
+	    position: relative;
+	    text-align: center;
+	}
 }
 @media screen and (max-width: 767px) {
 	.mobile-dis-none{
@@ -892,6 +904,34 @@
 	.featuredJobs {
     	padding: 40px 0 40px 0;
 	}
+	.ContactBox-textSection {
+	    line-height: 1.5em;
+	    font-size: 14px;
+	    margin-right: 15px;
+	    -webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	    flex-grow: 1;
+	}
+	.ContactMain-contact{
+		flex-shrink: 0;
+	}
+	.ContactMain-contact,.ContactMain-formSection{
+		width: 100%;
+	}
+	.ContactMain{
+		flex-wrap: wrap;
+	}
+	.ContactTop-subtitle{
+		font-size: 17px;
+	}
+	.ContactMain-form {
+	    width: auto;
+	    margin: 50px 5px;
+	}
+	.ContactTop-title{
+		font-size: 32px;
+	}
+
 
 
 }

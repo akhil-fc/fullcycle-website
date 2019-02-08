@@ -35,16 +35,14 @@ $(function() {
 	    // end
 	    // banner translate effect
 	    	$(function(){
-              $('.allBannerSection, .polandImageWrap').each(function() {
+              $('.allBannerSection, .polandImageWrap, .ContactTop').each(function() {
                 var off = $(this).offset().top
                 $(this).data('orig-offset', off);
               });
               $(window).scroll(function(){
                 var scrollTop = $(window).scrollTop();
-
                  $('.allBannerSection, .polandImageWrap').each(function(){
-                  var off = $(this).data('orig-offset');                
-                   
+                  var off = $(this).data('orig-offset'); 
                   if (scrollTop >= off) {
                     var translate =  (scrollTop - off) / $(window).height() * 100;
                     var opacity = 1 - (3*scrollTop / 1000);
@@ -53,9 +51,23 @@ $(function() {
                     $(this).css('opacity', opacity);
                   }
                  });
+                 $('.ContactTop').each(function(){
+                  var off = $(this).data('orig-offset');
+                  if (scrollTop >= off) {
+                    var translate =  (scrollTop - off) / $(window).height() * 100;
+                    var opacity = 1 - (1.8*scrollTop / 1000);                    
+                    $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'}); 
+                    $(this).find('.ContactTop-backgroundImage').css('opacity', opacity);                  
+                    
+                  }
+                  
+                 });
               });
             });        
 	    // end
+
+	    
+
 
         // animation header menu mobile
 			$("#menu a").click(function() {
@@ -78,6 +90,8 @@ $(function() {
 		            margin: 0,
 		            loop: false,
 		            animateOut: 'fadeOut',
+		            touchDrag:false,
+		            mouseDrag:false,
 		            responsive: {
 		                0: {
 		                    items: 1
@@ -91,26 +105,6 @@ $(function() {
 		            }
 		        })
 
-		        // for about us page
-		        	var owl = $('.empoweringCompaniesWrap .owl-carousel');
-		                owl.owlCarousel({
-		                    margin: 0,
-		                    loop: false,
-		                    animateOut: 'fadeOut',
-
-		                    responsive: {
-		                        0: {
-		                            items: 1
-		                        },
-		                        600: {
-		                            items: 1
-		                        },
-		                        1000: {
-		                            items: 1
-		                        }
-		                    }
-		               	})
-		        // end
 		        // custom accordion 
 		        	 $(".singleFaqQuestions > a").click(function(){                     
 	                    $(this).toggleClass("showAnswer");                    
