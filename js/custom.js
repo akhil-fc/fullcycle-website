@@ -35,7 +35,7 @@ $(function() {
 	    // end
 	    // banner translate effect
 	    	$(function(){
-              $('.allBannerSection, .polandImageWrap, .ContactTop').each(function() {
+              $('.allBannerSection, .polandImageWrap, .ContactTop, #slide1').each(function() {
                 var off = $(this).offset().top
                 $(this).data('orig-offset', off);
               });
@@ -62,13 +62,22 @@ $(function() {
                   }
                   
                  });
+
+                 $('#slide1').each(function(){                     
+                  var off = $(this).data('orig-offset');
+                  if (scrollTop < off) {  
+                  	alert('aaaa');
+                  console.log($(this).parents());                    
+                    var opacity = 1 - (1.8*scrollTop / 1000);                     
+                    $(this).parents('.homeMainWrap').find('.clientSectionWrap h1, .clientSectionWrap .clientBarDetail > div').css('opacity', opacity);                  
+                    
+                  }
+
+                 });
               });
             });        
-	    // end
-
-	    
-
-
+	    // end        
+            
         // animation header menu mobile
 			$("#menu a").click(function() {
 			    $("#menu a").removeClass("active");
@@ -77,9 +86,10 @@ $(function() {
 			$(".toggleIcon").click(function() {
 			    $('.contactUsBtn').toggleClass('show');
 			    $('body').toggleClass('overflow-hidden');
+			    $('header').toggleClass('bg-white-click');
 			    $('.rightNavLinks').toggleClass('show');
 			    $(this).toggleClass('goRight');
-			    $('.rightNavLinks ul').toggleClass('fadeInUp');
+			    $('.rightNavLinks ul').toggleClass('animated animatedFadeInUp fadeInUp');
 			});
         // end
        
@@ -104,6 +114,7 @@ $(function() {
 		                }
 		            }
 		        })
+		        // END
 
 		        // custom accordion 
 		        	 $(".singleFaqQuestions > a").click(function(){                     

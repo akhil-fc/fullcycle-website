@@ -6,6 +6,16 @@
 	#slide1.section .recentlyPublishedWrap{
 		height: calc(100% - 116px);
 	}
+	.rightNavLinks.show ul{
+		height: 400px;
+		overflow: auto;
+	}
+}
+@media screen and (max-height: 380px) {
+	.rightNavLinks.show ul{
+		height: 250px;
+		overflow: auto;
+	}
 }
 @media screen and (min-width: 1300px){
 	.leaderCaption .leaderCaptionText:last-child {
@@ -154,6 +164,9 @@
 		position: fixed;
 		background: #fff;
 	}
+	header .rightNavLinks{
+		z-index: 999;
+	}
 	header .rightNavLinks ul{
 		display: flex;
 		margin-bottom: 0px;
@@ -290,7 +303,7 @@
 		text-align: center;
 	}
 	.contactWrap{
-		position: fixed;
+		position: static;
 		bottom: 0px;
 		margin-bottom: 30px;
 	}

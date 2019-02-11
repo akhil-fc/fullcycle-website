@@ -52,6 +52,7 @@ header .rightNavLinks ul{
   display: flex;
   margin-bottom: 0px;
   list-style: none;
+  margin-top: 0px;
 }
 header .navLink a{
   font-size: 16px;
@@ -185,6 +186,7 @@ z-index: 2;
     min-height: 38px;
     background: hsla(0,0%,100%,.05);
     padding:6px 10px;
+    margin-top: 80px;
 }
 .recentlyPublishedWrap .innerwrap svg{
   height: 15px!important;
@@ -193,12 +195,11 @@ z-index: 2;
   height: 100%;
 }
 .extendedDevelopmentWrap{
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100%;
    padding: 0px 50px;
+   height: calc(100% - 140px);
 }
 
 #menu{
@@ -246,6 +247,7 @@ display: flex;
   padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
+  overflow: hidden;
 }
 
 .clientSectionWrap h1{
@@ -1162,7 +1164,7 @@ background-position: left 13px top 8px;
 .subNavigation.fixed{
   position: fixed;
   box-shadow: 0 2px 4px rgba(0,0,0,.03);
-  top: 79px;
+  top: 78px;
   background: #fff;
   width: 100%;
   opacity:1;
@@ -1301,6 +1303,7 @@ header.box-shadow{
 }
 header.bg-transparent.bg-white{
   background: #fff!important;
+  z-index: 99;
 }
 header.bg-transparent.bg-white .logoWrap svg{
   fill: #000000 !important;
@@ -2251,4 +2254,90 @@ footer .fbIcon{
   100% {
     opacity : 0   ;
   }  
+}
+
+header.bg-transparent.bg-white-click{
+  background:#fff!important;
+}
+header.bg-transparent.bg-white-click .logoWrap p{
+  color: #404040;
+}
+header.bg-transparent.bg-white-click .logoWrap svg {
+    fill: #000000 !important;
+
+}
+header.bg-transparent.bg-white-click .toggleIcon span::before, header.bg-transparent.bg-white-click .toggleIcon span::after {
+
+    background: #404040 !important;
+
+}
+header.bg-transparent.bg-white .contactUsBtn{
+   border:1px solid #404040;
+   color: #404040;
+}
+
+
+
+/*fade in up animation*/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 2s!important;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s!important;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/*end*/
+header.bg-transparent{
+  background:transparent;
+}
+header .logoWrap a{
+  text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+article, aside, dialog, figcaption, figure, header, hgroup, main, nav, section {
+    display: block;
 }

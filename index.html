@@ -100,7 +100,7 @@
             </div>
       </header>
       </div>
-      <div >
+      <div class="homeMainWrap">
          <div class="section" id="slide1">
             <div class="sectionOneWrap">
                <div class="recentlyPublishedWrap">
@@ -146,7 +146,7 @@
             </div>
          </div>
          <div class="clientSectionWrap">
-            <div class="ghostBar" >              
+            <div class="ghostBar" data--200-bottom-bottom="opacity:1;" data-center-top="opacity:0;" >              
                      <div >
                         <img src="https://www.sofomo.com/static/media/totalmed-white.07bea458.svg">
                      </div>
@@ -157,8 +157,8 @@
                         <img src="https://www.sofomo.com/static/media/bizzby-white.c0d19a9e.svg">
                      </div>                   
                </div>
-            <h1>Exceptional development teams for innovative companies since 2010</h1>
-            <div class="clientBarDetail">
+            <h1 data--300-bottom-center="opacity:0;" data--100-center-top="opacity:1;">Exceptional development teams for innovative companies since 2010</h1>
+            <div class="clientBarDetail" data-bottom-bottom="transform: translateY(-250.2px) scale(0.6);" data-center-top="transform: translateY(0px) scale(1);">
                <div>
                 <img src="https://www.sofomo.com/static/media/totalmed.ca1f5450.svg">                  
                   <p class="clientInfo">Leading Healthcare Company</p>
@@ -179,7 +179,7 @@
          <div class="section" id="slide2">
             <div class="sectionTwoWrap ">
                <div class="extendedDevelopmentWrap wow fadeInUp"  data-wow-duration="2s" >
-                  <h1>Developers you can trust</h1>
+                  <h1 >Developers you can trust</h1>
                   <p>Because you can’t have great technology without great talent.</p>
                   <a href="#">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50">
@@ -324,6 +324,10 @@
       <script src="js/wow.min.js"></script>
       <script src="js/custom.js"></script> 
       <script src="js/jquery.stellar.min.js"></script> 
+      <script src="js/skrollr.min.js"></script>
+      <script type="text/javascript">
+         var s = skrollr.init();
+      </script>
        <script>
          new WOW().init();
       </script> 
@@ -342,19 +346,7 @@
                                   
         });
       </script>
-      <script>         
-         $(window).scroll(function (event) {
-            var scroll = $(window).scrollTop();
-            if(scroll < 100){
-               $(".clientSectionWrap .ghostBar").css("transform", "translateY(-107.2px)", "opacity", "1");
-               $(".clientSectionWrap .ghostBar > div img").css("transform", "scale(0.6)")
-            }
-            else{
-               $(".clientSectionWrap .ghostBar").css("transform", "translateY(0px)", "opacity", "0");
-               $(".clientSectionWrap .ghostBar > div img").css("transform", "scale(0)")               
-            }
-         });
-      </script>
+      
    </body>
 </html>
 
