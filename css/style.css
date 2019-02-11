@@ -23,6 +23,9 @@ a:focus {
 }
 
 /*header css*/
+header.bg-transparent{
+  background: transparent;
+}
 header {
   padding: 15px 30px;
   position: fixed;
@@ -2708,7 +2711,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 }
 
-.animated {
+.animated-nav {
   animation-duration: 2s !important;
   animation-fill-mode: both;
   -webkit-animation-duration: 2s !important;

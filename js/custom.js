@@ -116,7 +116,7 @@ $(function() {
 			    $('.rightNavLinks').toggleClass('show');
 			    $('#indexPageWebLinks').toggleClass('show');
 			    $(this).toggleClass('goRight');
-			    $('.rightNavLinks ul').toggleClass('animated animatedFadeInUp cstmfadeInUp');
+			    $('.rightNavLinks ul').toggleClass('animated-nav animatedFadeInUp cstmfadeInUp');
 			});
         // end
 		        // custom accordion 
