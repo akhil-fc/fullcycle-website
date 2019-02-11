@@ -1334,6 +1334,7 @@ header{
 }
 .ourStoryContainer  {
   overflow-x: hidden;
+  padding-bottom: 60px;
 }
 .ourStoryInner a,.ourStoryInner a:hover{
   text-decoration: none;
@@ -2235,7 +2236,7 @@ footer .fbIcon{
   z-index : 0 
    }
 /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
-.fadeOut  {
+/*.fadeOut  {
   -webkit-animation-name : fadeOut  ;
   animation-name : fadeOut  ;
 }  
@@ -2254,7 +2255,7 @@ footer .fbIcon{
   100% {
     opacity : 0   ;
   }  
-}
+}*/
 
 header.bg-transparent.bg-white-click{
   background:#fff!important;
@@ -2280,7 +2281,7 @@ header.bg-transparent.bg-white .contactUsBtn{
 
 /*fade in up animation*/
 
-@keyframes fadeInUp {
+/*@keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
     }
@@ -2301,8 +2302,8 @@ header.bg-transparent.bg-white .contactUsBtn{
         opacity: 1
     }
 }
-
-.animated {
+*/
+/*.animated {
     animation-duration: 2s!important;
     animation-fill-mode: both;
     -webkit-animation-duration: 2s!important;
@@ -2317,10 +2318,10 @@ header.bg-transparent.bg-white .contactUsBtn{
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
-}
+}*/
 
 /*end*/
-header.bg-transparent{
+/*header.bg-transparent{
   background:transparent;
 }
 header .logoWrap a{
@@ -2340,4 +2341,4 @@ body {
 }
 article, aside, dialog, figcaption, figure, header, hgroup, main, nav, section {
     display: block;
-}
+}*/
