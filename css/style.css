@@ -2304,13 +2304,13 @@ header.bg-transparent.bg-white .contactUsBtn{
 }
 
 .animated {
-    animation-duration: 2s!important;
+    animation-duration: 1s!important;
     animation-fill-mode: both;
-    -webkit-animation-duration: 2s!important;
+    -webkit-animation-duration: 1s!important;
     -webkit-animation-fill-mode: both
-}
+}*/
 
-.animatedFadeInUp {
+/*.animatedFadeInUp {
     opacity: 0
 }
 
