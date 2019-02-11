@@ -3,7 +3,7 @@ $(function() {
 	// parallax animation
 	    $(window).on('scroll',function(){
 	        var WindowTop = $(window).scrollTop();
-	        $('.section, .slidingWrap').each(function(i){
+	        $('.section').each(function(i){
 	            if(WindowTop > $(this).offset().top - 79 && 
 	               WindowTop < $(this).offset().top + $(this).outerHeight(true)
 	              ){
@@ -20,18 +20,68 @@ $(function() {
 	            }
 	        });
 	    });
-	    $('a[href*=#]:not([href=#])').click(function() {
+	    $('.section a[href*=#]:not([href=#])').click(function() {
+	    	alert('bbb');
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	       var target = $(this.hash);
 	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	       if (target.length) {
 	        $('html,body').animate({
-	          scrollTop: target.offset().top
+	          scrollTop: target.offset().top 
 	        }, 1000);
 	        return false;
 	       }
 	     }
 	    }); 
+
+	    $('.subNavWrap li a[href*=#]:not([href=#])').click(function() {
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	       var target = $(this.hash);
+	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	       if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top - 120
+	        }, 1000);
+	        return false;
+	       }
+
+	     }
+	    }); 
+	    $('a[href*=#]:not([href=#]).arrowDownIcon').click(function() {
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	       var target = $(this.hash);
+	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	       if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top - 130
+	        }, 1000);
+	        return false;
+	       }
+
+	     }
+	    }); 
+
+// $('a[href*=#]').click(function (e) {
+//     e.preventDefault();
+
+//     var id = $(this).attr('href');
+
+//     if (width < 768) {
+//         var scrollTo = $(id).offset().top - 0;
+//     }
+//     else
+//     {
+//         var scrollTo = $(id).offset().top - 0;
+//     }
+
+//     $('html,body').animate({
+//         'scrollTop': scrollTo
+//     }, 2000);
+// });
+
+
+
+
 	    // end
 	    // banner translate effect
 	    	$(function(){
