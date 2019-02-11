@@ -19,7 +19,7 @@ $(function() {
 	            }
 	        });
 	    });
-	    $('#menu a[href*=#]:not([href=#])').click(function() {
+	    $('#menu a[href*=#]:not([href=#]), .slideToViewJobs').click(function() {
 	    	// alert('home page');
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	       var target = $(this.hash);
