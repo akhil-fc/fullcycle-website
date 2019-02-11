@@ -12,7 +12,7 @@ $(function() {
 	            }
 	        });
 	        $('.slidingWrap').each(function(i){
-	            if(WindowTop > $(this).offset().top - 79 && 
+	            if(WindowTop > $(this).offset().top - 125 && 
 	               WindowTop < $(this).offset().top + $(this).outerHeight(true)
 	              ){
 	               $('.subNavWrap li a').removeClass('active');
