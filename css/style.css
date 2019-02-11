@@ -53,17 +53,18 @@ header .rightNavLinks ul{
   margin-bottom: 0px;
   list-style: none;
   margin-top: 0px;
+  padding-left: 0px;
 }
 header .navLink a{
   font-size: 16px;
   display: block;
-padding: 0 10px;
-line-height: 49px;
-text-decoration: none;
-color: #404040;
-text-align: center;
-transition: font-weight .2s ease;
-font-weight: 400;
+  padding: 0 10px;
+  line-height: 49px;
+  text-decoration: none;
+  color: #404040;
+  text-align: center;
+  transition: font-weight .2s ease;
+  font-weight: 400;
 }
 header .navLink a:hover,header .navLink.active a,header  .contactUsBtn:hover{
   font-weight: 600;  
@@ -147,9 +148,9 @@ header.bg-transparent.bg-white .logoWrap p{
 }
 .recentlyPublishedWrap .title{
   font-weight: 600;
-letter-spacing: .4px;
-line-height: 1.63;
-color:#fff;
+  letter-spacing: .4px;
+  line-height: 1.63;
+  color:#fff;
 }
 
 .extendedDevelopmentWrap h1{
@@ -2325,25 +2326,3 @@ header.bg-transparent.bg-white .contactUsBtn{
 .ghostBar.tab-dis-block{
   display: none!important;
 }
-/*end*/
-/*header.bg-transparent{
-  background:transparent;
-}
-header .logoWrap a{
-  text-decoration: none;
-}
-
-body {
-    margin: 0;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-article, aside, dialog, figcaption, figure, header, hgroup, main, nav, section {
-    display: block;
-}*/

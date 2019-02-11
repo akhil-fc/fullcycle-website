@@ -1,5 +1,4 @@
-$(function() {
-	
+$(function() {	
 	// parallax animation
 	    $(window).on('scroll',function(){
 	        var WindowTop = $(window).scrollTop();
@@ -44,7 +43,6 @@ $(function() {
 	        }, 1000);
 	        return false;
 	       }
-
 	     }
 	    }); 
 	    $('a[href*=#]:not([href=#]).arrowDownIcon').click(function() {
@@ -116,14 +114,11 @@ $(function() {
 			    $('body').toggleClass('overflow-hidden');
 			    $('header').toggleClass('bg-white-click');
 			    $('.rightNavLinks').toggleClass('show');
+			    $('#indexPageWebLinks').toggleClass('show');
 			    $(this).toggleClass('goRight');
 			    $('.rightNavLinks ul').toggleClass('animated animatedFadeInUp cstmfadeInUp');
 			});
         // end
-       
-          
-		
-
 		        // custom accordion 
 		        	 $(".singleFaqQuestions > a").click(function(){                     
 	                    $(this).toggleClass("showAnswer");                    
@@ -141,5 +136,4 @@ $(function() {
 		                    }
 		            }); 
 		        // end
-
       });
