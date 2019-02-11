@@ -154,17 +154,17 @@ color:#fff;
 
 .extendedDevelopmentWrap h1{
   font-weight: 800;
-line-height: 1.35;
-letter-spacing: .4px;
-color: #fff;
-margin-top: 0;
-margin-bottom: 15px;
-max-width: 305px;
-font-size: 55px;
-line-height: 1.02;
-letter-spacing: .8px;
-max-width: 530px;
-z-index: 2;
+  line-height: 1.35;
+  letter-spacing: .4px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  max-width: 305px;
+  font-size: 55px;
+  line-height: 1.02;
+  letter-spacing: .8px;
+  max-width: 530px;
+  z-index: 2;
 }
 .extendedDevelopmentWrap p{
   width: 83%;
@@ -199,7 +199,10 @@ z-index: 2;
   flex-direction: column;
   justify-content: center;
    padding: 0px 50px;
-   height: calc(100% - 140px);
+   height: calc(100%);
+}
+#slide1 .extendedDevelopmentWrap{
+  height: calc(100% - 140px);
 }
 
 #menu{
@@ -2281,7 +2284,7 @@ header.bg-transparent.bg-white .contactUsBtn{
 
 /*fade in up animation*/
 
-/*@keyframes fadeInUp {
+@keyframes cstmfadeInUp {
     from {
         transform: translate3d(0,40px,0)
     }
@@ -2292,7 +2295,7 @@ header.bg-transparent.bg-white .contactUsBtn{
     }
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes cstmfadeInUp {
     from {
         transform: translate3d(0,40px,0)
     }
@@ -2304,22 +2307,24 @@ header.bg-transparent.bg-white .contactUsBtn{
 }
 
 .animated {
-    animation-duration: 1s!important;
+    animation-duration: 2s!important;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s!important;
+    -webkit-animation-duration: 2s!important;
     -webkit-animation-fill-mode: both
-}*/
+}
 
-/*.animatedFadeInUp {
+.animatedFadeInUp {
     opacity: 0
 }
 
-.fadeInUp {
+.cstmfadeInUp {
     opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-}*/
-
+    animation-name: cstmfadeInUp;
+    -webkit-animation-name: cstmfadeInUp;
+}
+.ghostBar.tab-dis-block{
+  display: none!important;
+}
 /*end*/
 /*header.bg-transparent{
   background:transparent;

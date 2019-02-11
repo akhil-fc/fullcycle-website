@@ -296,6 +296,27 @@
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
         <script>
+          // owl carosle initialising function
+            var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                  margin: 0,
+                  loop: false,
+                  animateOut: 'fadeOut',
+                  touchDrag:false,
+                  mouseDrag:false,
+                  responsive: {
+                      0: {
+                          items: 1
+                      },
+                      600: {
+                          items: 1
+                      },
+                      1000: {
+                          items: 1
+                      }
+                  }
+              })
+            // END
             $(window).scroll(function (event) {
                   var scroll = $(window).scrollTop();
                   $('.subNavigation ').toggleClass('fixed',               

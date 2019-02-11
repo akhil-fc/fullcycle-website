@@ -20,8 +20,8 @@ $(function() {
 	            }
 	        });
 	    });
-	    $('.section a[href*=#]:not([href=#])').click(function() {
-	    	alert('bbb');
+	    $('#menu a[href*=#]:not([href=#])').click(function() {
+	    	// alert('home page');
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	       var target = $(this.hash);
 	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -61,27 +61,6 @@ $(function() {
 	     }
 	    }); 
 
-// $('a[href*=#]').click(function (e) {
-//     e.preventDefault();
-
-//     var id = $(this).attr('href');
-
-//     if (width < 768) {
-//         var scrollTo = $(id).offset().top - 0;
-//     }
-//     else
-//     {
-//         var scrollTo = $(id).offset().top - 0;
-//     }
-
-//     $('html,body').animate({
-//         'scrollTop': scrollTo
-//     }, 2000);
-// });
-
-
-
-
 	    // end
 	    // banner translate effect
 	    	$(function(){
@@ -109,8 +88,7 @@ $(function() {
                     $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'}); 
                     $(this).find('.ContactTop-backgroundImage').css('opacity', opacity);                  
                     
-                  }
-                  
+                  }                  
                  });
 
                  $('#slide1').each(function(){                     
@@ -139,32 +117,12 @@ $(function() {
 			    $('header').toggleClass('bg-white-click');
 			    $('.rightNavLinks').toggleClass('show');
 			    $(this).toggleClass('goRight');
-			    $('.rightNavLinks ul').toggleClass('animated animatedFadeInUp fadeInUp');
+			    $('.rightNavLinks ul').toggleClass('animated animatedFadeInUp cstmfadeInUp');
 			});
         // end
        
           
-		// owl carosle initialising function
-			 var owl = $('.owl-carousel');
-		        owl.owlCarousel({
-		            margin: 0,
-		            loop: false,
-		            animateOut: 'fadeOut',
-		            touchDrag:false,
-		            mouseDrag:false,
-		            responsive: {
-		                0: {
-		                    items: 1
-		                },
-		                600: {
-		                    items: 1
-		                },
-		                1000: {
-		                    items: 1
-		                }
-		            }
-		        })
-		        // END
+		
 
 		        // custom accordion 
 		        	 $(".singleFaqQuestions > a").click(function(){                     
