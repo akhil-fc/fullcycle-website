@@ -2281,7 +2281,7 @@ header.bg-transparent.bg-white .contactUsBtn{
 
 /*fade in up animation*/
 
-/*@keyframes fadeInUp {
+@keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
     }
@@ -2302,8 +2302,8 @@ header.bg-transparent.bg-white .contactUsBtn{
         opacity: 1
     }
 }
-*/
-/*.animated {
+
+.animated {
     animation-duration: 2s!important;
     animation-fill-mode: both;
     -webkit-animation-duration: 2s!important;
@@ -2318,7 +2318,7 @@ header.bg-transparent.bg-white .contactUsBtn{
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
-}*/
+}
 
 /*end*/
 /*header.bg-transparent{
