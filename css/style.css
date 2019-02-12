@@ -42,13 +42,19 @@ header {
 header .logoWrap svg,header .logoWrap img {
   height: 23px !important;
 }
-
+header.bg-white .logoNormal,header .logoDark{
+  display: block;
+}
+header .logoNormal,header.bg-white .logoDark{
+  display: none;
+}
 header .logoWrap p {
   font-size: 12px;
   opacity: .5;
   color: #404040;
   margin-bottom: 0px;
   font-weight: 300;
+  margin-top: 2px;
 }
 
 header a:hover {
