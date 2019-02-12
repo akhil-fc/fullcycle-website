@@ -380,10 +380,10 @@ header.bg-transparent.bg-white .logoWrap p {
   max-width: 495px;
 }
 
-.sectionTwoWrap .extendedDevelopmentWrap p,
+/*.sectionTwoWrap .extendedDevelopmentWrap p,
 .sectionTwoWrap .sectionThereWrap p {
   margin-bottom: 30px;
-}
+}*/
 
 .sectionThereWrap {
   background-image: url(../images/secondSectionLarge.jpg);
@@ -438,10 +438,10 @@ header.bg-transparent.bg-white .logoWrap p {
   max-width: 265px;
 }
 
-.sectionFourWrap .extendedDevelopmentWrap p {
+/*.sectionFourWrap .extendedDevelopmentWrap p {
   margin-bottom: 30px;
 }
-
+*/
 .sectionFourWrap .clientNames .name {
   font-size: 35px;
   font-weight: 800;
@@ -2425,6 +2425,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .ContactBox-image > img {
   width: 50px;
+  border-radius: 100%;
 }
 
 .ContactBox-imageText {
@@ -2511,6 +2512,42 @@ header.bg-transparent.bg-white .contactUsBtn {
   border-color: #979797;
 }
 
+.infoBtns{
+  height: 42px;
+  width: 150px;
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.infoBtns:hover{
+  background: #fff;  
+  text-decoration: none;
+
+}
+.whyIndiaBtn,.whyIndiaBtn:hover{
+  color: rgba(85, 206, 141, .9);
+}
+.aboutUsHomeBtn,.aboutUsHomeBtn:hover{
+   color: #ed964e;
+}
+.yourDevelopersBtn,.yourDevelopersBtn:hover{
+  color: #4b77a2;
+}
+.whatWeDoBtn,.whatWeDoBtn:hover{
+  color: #4b77a2;
+}
+.contactUsHomeBtn,.contactUsHomeBtn:hover{
+  color: #e98481;
+}
+
 footer p,
 footer a {
   font-size: 15px;
@@ -2577,9 +2614,9 @@ footer span {
 footer .contactBoxes {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex: 0 0 310px;
+  /*-ms-flex: 0 0 310px;
   flex: 0 0 310px;
-  max-width: 310px;
+  max-width: 310px;*/
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 1.5em;
@@ -2590,6 +2627,7 @@ footer .contactBoxes img {
   width: 50px;
   height: 50px;
   margin-left: 20px;
+  border-radius: 100%;
 }
 
 footer .divider {

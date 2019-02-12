@@ -76,7 +76,7 @@ $(function() {
                     $(this).css({transform: 'translateY(' + translate +'px)'});
                     $(this).css('opacity', opacity);
                   }
-                  else{
+                  else{                  	
                   	$(this).css('opacity', '1');
                   }
                  });
@@ -87,28 +87,17 @@ $(function() {
                     var opacity = 1 - (1.8*scrollTop / 1000);                    
                     $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'});
                     $(this).find('.ContactTop-backgroundImage').css('opacity', opacity); 
-                  }                  
-                 });
-                 $('#slide1').each(function(){                     
-                  var off = $(this).data('orig-offset');
-                  if (scrollTop < off) {  
-                  	alert('aaaa');
-                  console.log($(this).parents());                    
-                    var opacity = 1 - (1.8*scrollTop / 1000);                     
-                    $(this).parents('.homeMainWrap').find('.clientSectionWrap h1, .clientSectionWrap .clientBarDetail > div').css('opacity', opacity);                  
-                    
-                  }
-
+                  }                
                  });
               });
             });        
-	    // end        
+	    // end       
             
 		        // animation header menu mobile
-					$("#menu a").click(function() {
-					    $("#menu a").removeClass("active");
-					    $(this).addClass("active");
-					});
+					// $("#menu a").click(function() {
+					//     $("#menu a").removeClass("active");
+					//     $(this).addClass("active");
+					// });
 					$(".toggleIcon").click(function() {					   
 					    $('body').toggleClass('overflow-hidden');
 					    $('header').toggleClass('bg-white-click');
