@@ -20,6 +20,7 @@
 		overflow: auto;
 	}
 
+
 }
 
 @media screen and (min-width:1300px) {
@@ -199,7 +200,7 @@
 
 	.rightNavLinks {
 		width: 100%;
-		top: 76px;
+		top: 70px;
 		left: 0px;
 		right: 0px;
 		margin: 0 auto;
@@ -313,16 +314,16 @@
 		overflow: hidden;
 	}
 
-	.toggleIcon.goRight {
+	.toggleIcon.goRight ,.bg-white-click .toggleIcon{
 		right: -107px;
 	}
 
 	header .toggleIcon.goRight span,
-	header.bg-transparent .toggleIcon.goRight span {
+	header.bg-transparent .toggleIcon.goRight span,header.bg-white-click .toggleIcon span{
 		background: 0 0 !important;
 	}
 
-	header .toggleIcon.goRight span:before {
+	header .toggleIcon.goRight span:before,header.bg-white-click .toggleIcon span:before {
 		top: 0;
 		-webkit-transform: rotate(45deg);
 		-ms-transform: rotate(45deg);
@@ -332,7 +333,7 @@
 		transition: top .3s 0s, transform .3s .3s, background .3s ease, -webkit-transform .3s .3s;
 	}
 
-	header .toggleIcon.goRight span:after {
+	header .toggleIcon.goRight span:after,header.bg-white-click .toggleIcon span:after {
 		bottom: 0;
 		-webkit-transform: rotate(-45deg);
 		-ms-transform: rotate(-45deg);
@@ -472,7 +473,9 @@
 	}
 
 	header.bg-transparent.bg-white .toggleIcon span:before,
-	header.bg-transparent.bg-white .toggleIcon span:after {
+	header.bg-transparent.bg-white .toggleIcon span:after,
+	header.bg-white .toggleIcon span:before,
+	header.bg-white .toggleIcon span:after {
 		background: #404040 !important;
 	}
 
@@ -481,7 +484,7 @@
 		background: #fff !important;
 	}
 
-	header.bg-white .toggleIcon.goRight span {
+	header.bg-white .toggleIcon.goRight span,header.bg-white-click .toggleIcon span {
 		background: #fff !important;
 	}
 
@@ -706,7 +709,7 @@
 		display: block;
 	}
 
-	.toggleIcon.goRight {
+	.toggleIcon.goRight,.bg-white-click .toggleIcon {
 		right: 0px;
 	}
 
@@ -1304,6 +1307,10 @@
 		text-align: center;
 	}
 
+	.subNavWrap a{
+    	font-size: 14px;
+    	margin: 0 3px;
+	}
 }
 
 @media screen and (max-width:340px) {
@@ -1317,7 +1324,6 @@
 		height: 13px !important;
 		width: 55px;
 	}
-
 	.clientSectionWrap,
 	.extendedDevelopmentWrap,
 	.recentlyPublishedWrap .innerwrap {

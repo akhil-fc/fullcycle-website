@@ -103,21 +103,21 @@ $(function() {
             });        
 	    // end        
             
-        // animation header menu mobile
-			$("#menu a").click(function() {
-			    $("#menu a").removeClass("active");
-			    $(this).addClass("active");
-			});
-			$(".toggleIcon").click(function() {
-			    $('.contactUsBtn').toggleClass('show');
-			    $('body').toggleClass('overflow-hidden');
-			    $('header').toggleClass('bg-white-click');
-			    $('.rightNavLinks').toggleClass('show');
-			    $('#indexPageWebLinks').toggleClass('show');
-			    $(this).toggleClass('goRight');
-			    $('.rightNavLinks ul').toggleClass('animated-nav animatedFadeInUp cstmfadeInUp');
-			});
-        // end
+		        // animation header menu mobile
+					$("#menu a").click(function() {
+					    $("#menu a").removeClass("active");
+					    $(this).addClass("active");
+					});
+					$(".toggleIcon").click(function() {
+					    $('.contactUsBtn').toggleClass('show');
+					    $('body').toggleClass('overflow-hidden');
+					    $('header').toggleClass('bg-white-click');
+					    $(this).toggleClass('goRight');
+					    $('.rightNavLinks').toggleClass('show');
+					    $('#indexPageWebLinks').toggleClass('show');			    
+					    $('.rightNavLinks ul').toggleClass('animated-nav animatedFadeInUp cstmfadeInUp');
+					});
+		        // end
 		        // custom accordion 
 		        	 $(".singleFaqQuestions > a").click(function(){                     
 	                    $(this).toggleClass("showAnswer");                    

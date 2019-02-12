@@ -39,7 +39,7 @@ header {
   padding: 15px 30px;
 }
 
-header .logoWrap svg {
+header .logoWrap svg,header .logoWrap img {
   height: 23px !important;
 }
 
@@ -2376,7 +2376,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   background-color: #3b3b3b;
   padding: 20px 20px 15px;
   padding-top: 10px;
-  width: 280px;
+  width: 290px;
 }
 
 .ContactMain-contact {
@@ -2567,9 +2567,9 @@ footer span {
 footer .contactBoxes {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex: 0 0 287px;
-  flex: 0 0 287px;
-  max-width: 287px;
+  -ms-flex: 0 0 310px;
+  flex: 0 0 310px;
+  max-width: 310px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 1.5em;
