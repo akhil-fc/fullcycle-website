@@ -1,6 +1,10 @@
 body {
   font-family: "proxima-nova";
   font-weight: 400;
+  overflow: auto!important;
+}
+body.overflow-hidden{
+  overflow: hidden!important;
 }
 
 button:focus,
