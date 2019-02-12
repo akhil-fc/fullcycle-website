@@ -6,6 +6,9 @@ body {
 body.overflow-hidden{
   overflow: hidden!important;
 }
+html.skrollr-mobile{
+  overflow: auto!important;
+}
 
 button:focus,
 a:focus {
@@ -1387,7 +1390,7 @@ footer h4 {
 .subNavigation.fixed {
   position: fixed;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .03);
-  top: 78px;
+  top: 70px;
   background: #fff;
   width: 100%;
   opacity: 1;
