@@ -58,7 +58,6 @@ $(function() {
 
 	     }
 	    }); 
-
 	    // end
 	    // banner translate effect
 	    	$(function(){
@@ -108,13 +107,11 @@ $(function() {
 					    $("#menu a").removeClass("active");
 					    $(this).addClass("active");
 					});
-					$(".toggleIcon").click(function() {
-					    $('.contactUsBtn').toggleClass('show');
+					$(".toggleIcon").click(function() {					   
 					    $('body').toggleClass('overflow-hidden');
 					    $('header').toggleClass('bg-white-click');
 					    $(this).toggleClass('goRight');
-					    $('.rightNavLinks').toggleClass('show');
-					    $('#indexPageWebLinks').toggleClass('show');			    
+					    $('.rightNavLinks, .contactUsBtn').toggleClass('show');			    
 					    $('.rightNavLinks ul').toggleClass('animated-nav animatedFadeInUp cstmfadeInUp');
 					});
 		        // end

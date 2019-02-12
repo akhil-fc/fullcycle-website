@@ -306,7 +306,7 @@
 		display: block;
 	}
 
-	.contactUsBtn.show {
+	.contactUsBtn.show,.bg-white-click .contactUsBtn {
 		right: -150px;
 	}
 
@@ -348,7 +348,7 @@
 		visibility: hidden;
 	}
 
-	.rightNavLinks.show {
+	.rightNavLinks.show,.bg-white-click .rightNavLinks {
 		opacity: 1;
 		visibility: visible;
 	}
