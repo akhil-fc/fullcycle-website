@@ -88,7 +88,6 @@ $(function() {
                     
                   }                  
                  });
-
                  $('#slide1').each(function(){                     
                   var off = $(this).data('orig-offset');
                   if (scrollTop < off) {  
