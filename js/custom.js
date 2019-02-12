@@ -76,15 +76,17 @@ $(function() {
                     $(this).css({transform: 'translateY(' + translate +'px)'});
                     $(this).css('opacity', opacity);
                   }
+                  else{
+                  	$(this).css('opacity', '1');
+                  }
                  });
                  $('.ContactTop').each(function(){
                   var off = $(this).data('orig-offset');
                   if (scrollTop >= off) {
                     var translate =  (scrollTop - off) / $(window).height() * 100;
                     var opacity = 1 - (1.8*scrollTop / 1000);                    
-                    $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'}); 
-                    $(this).find('.ContactTop-backgroundImage').css('opacity', opacity);                  
-                    
+                    $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'});
+                    $(this).find('.ContactTop-backgroundImage').css('opacity', opacity); 
                   }                  
                  });
                  $('#slide1').each(function(){                     
