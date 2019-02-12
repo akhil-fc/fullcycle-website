@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="subNavigation">
+        <div class="subNavigation" data-bottom-bottom="opacity:0;" data-200-top-top="opacity:1;">
             <div class="subNavWrap aboutUsSubMenu">
               <li><a href="#Story" class="active">Our Story</a></li>
               <li><a href="#Leadership">Our Leadership</a></li>
@@ -284,7 +284,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="js/custom.js"></script>     
+        <script src="js/skrollr.min.js"></script>
+        <script>
+            var s = skrollr.init();
+        </script>
+
         <script>
           // owl carosle initialising function
             var owl = $('.owl-carousel');

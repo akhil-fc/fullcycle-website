@@ -101,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="subNavigation">
+    <div class="subNavigation" data-bottom-bottom="opacity:0;" data-200-top-top="opacity:1;">
         <div class="subNavWrap">
           <li><a href="#Dedicated" class="active">Fully Dedicated</a></li>
           <li><a href="#Experienced">Skilled & Experienced</a></li>
@@ -308,7 +308,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.carousel.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js"></script>     
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script> 
     
     <script>
         new WOW().init();
@@ -344,13 +348,7 @@
                 scroll >= $('#Dedicated').offset().top - 230
               );
           });   
-        $(document).ready(function(){
-          $(".fulldelicatedMemberWrap .owl-nav button").click(function(){
-            $(".owl-item .sliderContentWrap ").removeClass('animation-left ')
-            $(".owl-item.active .sliderContentWrap ").addClass('animation-left ')
-          });
-        });
-                
+          
     </script>
     
 </body>

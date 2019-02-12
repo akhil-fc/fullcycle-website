@@ -93,11 +93,7 @@ $(function() {
             });        
 	    // end       
             
-		        // animation header menu mobile
-					// $("#menu a").click(function() {
-					//     $("#menu a").removeClass("active");
-					//     $(this).addClass("active");
-					// });
+		        // animation header menu mobile					
 					$(".toggleIcon").click(function() {					   
 					    $('body').toggleClass('overflow-hidden');
 					    $('header').toggleClass('bg-white-click');
@@ -122,5 +118,11 @@ $(function() {
 		                        $(".boxShadowOnScroll").css("box-shadow", "0 0px 0px rgba(0,0,0,.03)");
 		                    }
 		            }); 
+		        // end
+		        // owl carosel animation from left
+		        	$(".fulldelicatedMemberWrap .owl-nav button").click(function(){
+			            $(".owl-item .sliderContentWrap ").removeClass('animation-left ');
+			            $(".owl-item.active .sliderContentWrap ").addClass('animation-left ');
+          			});
 		        // end
       });
