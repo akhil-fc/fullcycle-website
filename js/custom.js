@@ -3,7 +3,7 @@ $(function() {
 	    $(window).on('scroll',function(){
 	        var WindowTop = $(window).scrollTop();
 	        $('.section').each(function(i){
-	            if(WindowTop > $(this).offset().top - 79 && 
+	            if(WindowTop > $(this).offset().top - 350 && 
 	               WindowTop < $(this).offset().top + $(this).outerHeight(true)
 	              ){
 	               $('#menu li a, .subNavWrap li a').removeClass('active');
@@ -26,7 +26,7 @@ $(function() {
 	       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	       if (target.length) {
 	        $('html,body').animate({
-	          scrollTop: target.offset().top 
+	          scrollTop: target.offset().top - 79
 	        }, 1000);
 	        return false;
 	       }
