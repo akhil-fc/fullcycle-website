@@ -2507,7 +2507,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   cursor: default;
 }
 
-.InputText:focus {
+.InputText:focus,.TextArea:focus {
   background-color: #fff;
   border-color: #979797;
 }

@@ -1222,6 +1222,12 @@
 	.ContactTop-title {
 		font-size: 32px;
 	}
+	footer .contactBoxes img{
+		margin-left: 10px;
+	}
+	footer .contactBoxes > div:first-child{
+		width: 219px;
+	}
 
 }
 
