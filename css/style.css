@@ -469,7 +469,17 @@ header.bg-transparent.bg-white .logoWrap p {
   margin-bottom: 0px;
   line-height: 1;
 }
-
+.sectionFourWrap .clientNames{
+      max-width: 856px;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 856px;
+      z-index: 9;
+}
+.sectionThereWrap {
+  position: relative;
+}
 .sectionFourWrap .clientNames {
   align-self: self-end;
   display: -ms-inline-flexbox;
