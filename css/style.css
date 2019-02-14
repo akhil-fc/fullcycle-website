@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 body {
-  font-family: "proxima-nova";
+  /*font-family: "proxima-nova";*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;  
 }
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');*/
 html.skrollr-mobile body{
   overflow: auto!important;
 }
@@ -222,7 +223,7 @@ header.bg-transparent.bg-white .logoWrap p {
   margin-top: 0;
   margin-bottom: 15px;
   max-width: 305px;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 1.02;
   letter-spacing: .8px;
   max-width: 530px;
@@ -233,7 +234,7 @@ header.bg-transparent.bg-white .logoWrap p {
   width: 83%;
   max-width: 450px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.39;
   letter-spacing: .5px;
   color: #fff;
@@ -443,7 +444,9 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .sectionFourWrap {
-  background-image: url(../images/fifthSectionDesktop.jpg);
+  /*background-image: url(../images/fifthSectionDesktop.jpg);*/
+  background-image: url(../images/fifthSectionDesktop_josh.jpg);
+  
   background-position: 66% 0;
 }
 
@@ -658,7 +661,7 @@ header .rightNavLinks .navLink {
 }
 
 .allBannerSection .pageTitle {
-  font-size: 55px;
+  font-size: 44px;
   line-height: 1.02;
   letter-spacing: .8px;
   max-width: 534px;
@@ -671,7 +674,7 @@ header .rightNavLinks .navLink {
   width: 92%;
   max-width: 540px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -1236,7 +1239,7 @@ p.commonDetailPara {
 
 footer h4 {
   color: #212529;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -1250,13 +1253,13 @@ footer .leadersImg{
   margin-top: 14px;
 }
 footer .addressFirst{
-  margin-top: 0px;
+  margin-top: 10px;
 }
 footer .contactBoxes img.leadersImg1{
   margin-top: 20px;
 }
 footer .contactBoxes img.leadersImg2{
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .instagramImageWrap .instagramImage.image1 {
@@ -1660,7 +1663,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 .ourStoryInner a,
 .ourStoryInner a:hover,.faqDescrip a {
   text-decoration: none;
-  color: #ed8c3d;
+  color: #21a79b;
 }
 
 .lederShipWrap {
@@ -1860,7 +1863,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .faqSectionTitle {
   margin-top: 40px;
-  color: #ed8c3d;
+  color: #21a79b;
   opacity: 1;
   font-size: 16px;
   letter-spacing: .6px;
@@ -1870,7 +1873,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 .faqSectionTitle:after {
   content: "";
   /*background-color: #d8d8d8;*/
-  background-color: #ed8c3d;
+  background-color: #21a79b;
   width: 80px;
   height: 3px;
   display: block;
@@ -2022,7 +2025,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .carrersStoryWrap p.commonDetailPara a,
 .carrersStoryWrap p.commonDetailPara a:hover {
-  color: #5194E2;
+  color: #21a79b;
   text-decoration: none;
 }
 
@@ -2080,7 +2083,8 @@ header.bg-transparent.bg-white .contactUsBtn {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "proxima-nova", "Proxima Nova", sans-serif;
+  /*font-family: "proxima-nova", "Proxima Nova", sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 60px;
   color: #4a4a4a;
@@ -2098,7 +2102,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 .siliconSection {
   padding: 50px 0;
   background-color: #f47a21;
-  font-family: "proxima-nova", "Proxima Nova", sans-serif;
+  /*font-family: "proxima-nova", "Proxima Nova", sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   color: #ffffff;
   line-height: 30px;
@@ -2393,7 +2398,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .ContactTop-title {
   color: #fff;
-  font-family: proxima-nova, proxima nova, sans-serif;
+  f/*ont-family: proxima-nova, proxima nova, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 1.1em;
   margin-bottom: 15px;
@@ -2406,7 +2412,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .ContactTop-subtitle {
-  font-family: proxima-nova, proxima nova, sans-serif;
+/*  font-family: proxima-nova, proxima nova, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.1em;
   margin-bottom: 20px;
@@ -2530,7 +2537,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 .InputText {
   font-size: 17px;
   font-weight: 600;
-  font-family: proxima-nova, proxima nova, sans-serif;
+  /*font-family: proxima-nova, proxima nova, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid transparent;
   outline: 0;
   margin: 0;
@@ -2542,7 +2550,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .TextArea {
   font-weight: 600;
-  font-family: proxima-nova, proxima nova, sans-serif;
+  /*font-family: proxima-nova, proxima nova, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   border: 1px solid transparent;
   overflow: auto;
   outline: none;
@@ -2558,7 +2567,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .FormButton {
   font-weight: 600;
-  font-family: proxima-nova, proxima nova, sans-serif;
+  /*font-family: proxima-nova, proxima nova, sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   border: 0;
   outline: 0;
@@ -2625,8 +2635,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 footer p,
 footer a {
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 24px;
   /*color: #767676;*/
   color: #212529;
   opacity: .6;
@@ -2672,13 +2682,13 @@ footer h3 {
 
 footer .links a {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   /*color: #767676;*/
   color: #212529;
 }
 
 footer .links a:hover {
-  font-size: 15px;
+  font-size: 13px;
   /*color: #4ba9ff;*/
   color: rgb(244, 122, 33);
   font-weight: 600;

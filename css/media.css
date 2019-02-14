@@ -388,9 +388,9 @@
 		margin-top: 60px;
 	}
 
-	.sectionTwoWrap {
+	/*.sectionTwoWrap {
 		background-image: url(../images/secondSectionTablet.jpg);
-	}
+	}*/
 
 	.blueOverlay,
 	.darkBlueOverlay,
@@ -518,7 +518,7 @@
 	}
 
 	.fourStepImageWrap img {
-		bottom: -60px;
+		bottom: -40px;
 	}
 
 	.numberLine span {
@@ -752,11 +752,15 @@
 	}
 
 	.sectionTwoWrap {
-		background-image: url('../images/secondSectionMobile.jpg');
-		background-position: bottom;
-		background-size: cover;
+		/*background-image: url('../images/secondSectionMobile.jpg');*/
+		/*background-position: bottom;
+		background-size: cover;*/
+		background-repeat: no-repeat;
+		background-position: -120px;
 	}
-
+	#slideThree .sectionTwoWrap{
+		background-position: 87% 0;
+	}
 	#slideThree .extendedDevelopmentWrap h1 {
 		max-width: 240px;
 	}
