@@ -17,16 +17,9 @@ $(function() {
 	               $('.subNavWrap li a').removeClass('active');
 	               $('.subNavWrap li').eq(i).find('a').addClass('active');
 	            }
-	        });
-	        var sticky = $('header'),
-                scroll = $(window).scrollTop();
-               
-              if (scroll >= 40) { 
-                sticky.addClass('fixed'); }
-              else { 
-               sticky.removeClass('fixed');
-
-            }
+	        });       
+	        
+	        
 	    });
 	    $('#menu a[href*=#]:not([href=#]), .slideToViewJobs').click(function() {
 	    	// alert('home page');
@@ -106,6 +99,8 @@ $(function() {
 					$(".toggleIcon").click(function() {					   
 					    $('body').toggleClass('overflow-hidden');
 					    $('header').toggleClass('bg-white-click');
+					    // $('header').removeClass(' ');
+
 					    $(this).toggleClass('goRight');
 					    $('.rightNavLinks, .contactUsBtn').toggleClass('show');			    
 					    $('.rightNavLinks ul').toggleClass('animated-nav animatedFadeInUp cstmfadeInUp');
@@ -134,4 +129,22 @@ $(function() {
 			            $(".owl-item.active .sliderContentWrap ").addClass('animation-left ');
           			});
 		        // end
+
+		        
+        $(window).on('scroll',function(){
+                if ($(window).width() > 960) {
+                var sticky = $('header'),
+                scroll = $(window).scrollTop();
+               
+                      if (scroll >= 40) { 
+                        sticky.addClass('fixed'); }
+                      else { 
+                       sticky.removeClass('fixed');
+
+                    }
+                }
+                else {
+                   
+                }
+            });
       });

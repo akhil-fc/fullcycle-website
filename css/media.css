@@ -184,6 +184,9 @@
 	.tab-dis-none {
 		display: none;
 	}
+	header{
+		position: fixed;
+	}
 
 	.rightNavLinks {
 		width: 100%;
