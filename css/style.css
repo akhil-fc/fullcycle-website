@@ -37,13 +37,33 @@ header.bg-transparent{
 }
 header {
   padding: 15px 30px;
-  position: fixed;
+  /*position: fixed;*/
   top: 0px;
   z-index: 999;
   background: #fff;
   width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;  
 }
-
+header.fixed {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 1s forwards;
+}
+/*for smooth scrolling header*/
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/*end*/
 header {
   padding: 15px 30px;
 }
@@ -470,11 +490,11 @@ header.bg-transparent.bg-white .logoWrap p {
   line-height: 1;
 }
 .sectionFourWrap .clientNames{
-      max-width: 988px;
+      max-width: auto;
       position: absolute;
       bottom: 0px;
       right: 0px;
-      width: 100%;
+      width: 58%;
       z-index: 9;
 }
 .sectionFourWrap .clientNames div:last-child{
@@ -1365,7 +1385,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap .slide1 {
-  background: url(../images/dev1-big.png);
+  background: url(../images/pravesh.png);
   background-size: contain;
   background-position: 50%;
   height: 100%;
@@ -1373,7 +1393,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap  .slide2 {
-  background: url(../images/dev3.png);
+  background: url(../images/dev3.jpg);
   background-size: contain;
   background-position: 50%;
   height: 100%;
@@ -1381,7 +1401,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap  .slide3 {
-  background: url(../images/dev4.png);
+  background: url(../images/dev2.jpg);
   background-size: contain;
   background-position: 50%;
   height: 100%;
@@ -1698,7 +1718,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .lederShipWrap .bgImageWrap {
-  background-image: url(../images/boards.png);
+  background-image: url(../images/main-persons.jpg);
   background-size: auto 98%;
   background-position: right 92% top 20px;
   max-width: 620px;

@@ -336,20 +336,7 @@
     <script>
         new WOW().init();
     </script>
-    <script >
-        $(window).scroll(function() {    
-            var scroll = $(window).scrollTop();
-
-             //>=, not <=
-            if (scroll >= 100) {
-                //clearHeader, not clearheader - caps H
-                $("header").css('position', 'fixed');
-            }
-            else{
-               $("header").css('position', 'static'); 
-            }
-        }); //missing );
-    </script>
+    
 </body>
 
 </html>

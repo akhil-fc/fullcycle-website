@@ -18,6 +18,15 @@ $(function() {
 	               $('.subNavWrap li').eq(i).find('a').addClass('active');
 	            }
 	        });
+	        var sticky = $('header'),
+                scroll = $(window).scrollTop();
+               
+              if (scroll >= 40) { 
+                sticky.addClass('fixed'); }
+              else { 
+               sticky.removeClass('fixed');
+
+            }
 	    });
 	    $('#menu a[href*=#]:not([href=#]), .slideToViewJobs').click(function() {
 	    	// alert('home page');

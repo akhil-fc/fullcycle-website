@@ -99,7 +99,7 @@
 	}
 
 	.lederShipWrap .bgImageWrap {
-		background-image: url(../images/boards-tablet.png);
+		/*background-image: url(../images/boards-tablet.png);*/
 		background-size: auto 90%;
 		background-position: right 88% top 60px;
 		max-width: 465px;
@@ -379,13 +379,18 @@
 		max-width: 50%;
 		text-align: center;
 	}
-
+	.clientBarDetail.tab-dis-block{
+		display: flex;
+	}
 	.clientBarDetail {
 		justify-content: center;
 	}
 
 	.clientBarDetail div:last-child {
 		margin-top: 60px;
+	}
+	.sectionTwoWrap{
+		background-position: 15%;
 	}
 
 	/*.sectionTwoWrap {
@@ -434,8 +439,8 @@
 	}
 
 	.sectionFourWrap {
-		background-image: url(../images/fifthSectionDesktop.jpg);
-		background-position: 92% 0;
+		/*background-image: url(../images/fifthSectionDesktop.jpg);*/
+		background-position: 63% 0;
 	}
 
 	.sectionFourWrap .clientNames {
@@ -916,9 +921,8 @@
 	}
 
 	.fulldelicatedMemberWrap .slide1 {
-		background: url(../images/dev1-small.png);
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: bottom center;
 	}
 
 	.fulldelicatedMemberWrap .sliderWrap .item {
@@ -1219,6 +1223,11 @@
 	footer .contactBoxes > div:first-child{
 		width: 219px;
 	}
+	.lederShipWrap .bgImageWrap {		
+		background-size: 100% 100%;
+		background-position: 100%;
+		min-height: auto;
+	}
 
 }
 
@@ -1320,6 +1329,9 @@
 		padding-left: 0px;
 		height: 60px;
 		bottom: 0px;
+	}
+	.sectionFourWrap{
+		background-position: 30% 0;
 	}
 }
 
