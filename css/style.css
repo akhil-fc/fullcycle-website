@@ -2,6 +2,7 @@ body {
   font-family: "proxima-nova";
   font-weight: 400;  
 }
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');*/
 html.skrollr-mobile body{
   overflow: auto!important;
 }
@@ -47,7 +48,12 @@ header {
 }
 
 header .logoWrap svg,header .logoWrap img {
-  height: 23px !important;
+  height: 30px !important;
+  margin-left: -13px;
+}
+header .logoWrap img.logoDark{
+height: 22px !important;
+  margin-left: 0px;
 }
 header.bg-white .logoNormal,header .logoDark,header.bg-white-click .logoNormal{
   display: block;
@@ -58,7 +64,7 @@ header .logoNormal,header.bg-white .logoDark,header.bg-white-click .logoDark{
 header .logoWrap p {
   font-size: 12px;
   opacity: .5;
-  color: #404040;
+  color: #212529;
   margin-bottom: 0px;
   font-weight: 300;
   margin-top: 5px;
@@ -95,7 +101,7 @@ header .navLink a {
   padding: 0 10px;
   line-height: 49px;
   text-decoration: none;
-  color: #404040;
+  color: #212529;
   text-align: center;
   transition: font-weight .2s ease;
   font-weight: 400;
@@ -106,7 +112,8 @@ header .navLink.active a,
 header  .contactUsBtn:hover {
   font-weight: 600;
   text-decoration: none;
-  color: #404040;
+  color: #212529;
+  /*color: #f47a21!important ;*/
 }
 
 header  .contactUsBtn {
@@ -115,12 +122,15 @@ header  .contactUsBtn {
   margin: 0px 0 0px 10px;
   width: 105px;
   text-decoration: none;
-  color: #404040;
+  color: #212529;
   text-align: center;
-  border: 1px solid #404040;
+  border: 1px solid #212529;
   border-radius: 2px;
   transition: right .25s 0s;
   line-height: 100%;
+}
+header .contactUsBtn:hover{
+  border: 1px solid #f47a21 ;
 }
 
 header.bg-transparent .navLink a {
@@ -149,7 +159,7 @@ header.bg-transparent .logoWrap p {
 
 header.bg-transparent.bg-white .logoWrap p {
   opacity: .5;
-  color: #404040;
+  color: #212529;
 }
 
 #slide1 {
@@ -328,7 +338,7 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .clientSectionWrap h1 {
-  color: #404040;
+  color: #212529;
   font-size: 30px;
   line-height: 1.34;
   text-align: center;
@@ -337,7 +347,7 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .clientSectionWrap .clientInfo {
-  color: #404040;
+  color: #212529;
   font-size: 16px;
   letter-spacing: .6px;
   line-height: normal;
@@ -347,7 +357,7 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .clientSubtitle {
-  color: #404040;
+  color: #212529;
   font-size: 15px;
   letter-spacing: .4px;
   line-height: 1.6;
@@ -364,7 +374,7 @@ header.bg-transparent.bg-white .logoWrap p {
 
 .blueOverlay {
   /*background: rgba(22, 143, 192, .7);*/
-  background: rgba(1,36,57, .8);
+  background: rgba(1,36,57, .7);
   width: 43%;
   height: 100%;
   top: 0px;
@@ -419,8 +429,11 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .sectionThereWrap {
-  background-image: url(../images/fourthSection_3.jpg);
+ /* background-image: url(../images/fourthSection_3.jpg);
   background-position: 0 70px;
+  background-size: cover;*/
+  background-image: url(../images/mapTest.png);
+  background-position: 220px 62%;
   background-size: cover;
   height: 100%;
 }
@@ -589,7 +602,7 @@ header .rightNavLinks .navLink {
 }
 
 .custom-droup-down ul li a {
-  color: #404040 !important;
+  color: #212529 !important;
   opacity: .5;
   display: block;
   width: 100%;
@@ -605,7 +618,9 @@ header .rightNavLinks .navLink {
 }
 
 .whatWeDoWrap .gredientWrap {
-  background-image: radial-gradient(circle at 50% -13%, #04a9b9 4%, #178abd 50%, #1470b4);
+/*  background-image: radial-gradient(circle at 50% -13%, #04a9b9 4%, #178abd 50%, #1470b4);*/
+  /*background-image: radial-gradient(circle at 50% -13%, #04a9b9 4%, #178abd 50%, #1470b4);*/
+  background-image: radial-gradient(circle at 50% -13%, #024e7e 4%, #023f64 50%, #012439);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 50%, 50%, 50%;
 }
@@ -682,7 +697,7 @@ header .rightNavLinks .navLink {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.33;
-  color: #404040;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -691,7 +706,7 @@ header .rightNavLinks .navLink {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin: 0;
 }
 
@@ -700,7 +715,7 @@ header .rightNavLinks .navLink {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin: 0;
   padding-bottom: 3px;
 }
@@ -710,7 +725,7 @@ header .rightNavLinks .navLink {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -752,7 +767,7 @@ header .rightNavLinks .navLink {
 
 .checkboxLine:after {
   content: "";
-  background-color: #1095bb;
+  background-color: #023f64;
   width: 2px;
   position: absolute;
   left: 11px;
@@ -773,7 +788,7 @@ header .rightNavLinks .navLink {
 
 .checkBoxesContainer .lineTop:before {
   content: "";
-  background-color: #1095bb;
+  background-color: #023f64;
   width: 2px;
   position: absolute;
   left: 11px;
@@ -802,7 +817,7 @@ header .rightNavLinks .navLink {
   padding: 13px 0 10px;
   margin: 0 10px;
   cursor: pointer;
-  color: #404040;
+  color: #212529;
   display: inline-block;
   opacity: .5;
   text-decoration: none;
@@ -810,8 +825,11 @@ header .rightNavLinks .navLink {
 
 .subNavWrap a.active {
   opacity: 1;
-  border-bottom: 3px solid #1095bb;
+  border-bottom: 3px solid #023f64;
   transition: border-color .5s 0s;
+}
+.subNavWrap.yourDeveloperSubMenu a.active{
+  border-bottom: 3px solid #f47a21;
 }
 
 .subNavWrap.aboutUsSubMenu a.active {
@@ -822,8 +840,9 @@ header .rightNavLinks .navLink {
   padding-top: 60px;
   padding-bottom: 30px;
   padding-left: 50px;
-  padding-right: 50px;
-  background: #f4f9fc;
+  padding-right: 50px;/*
+  background: #f4f9fc;*/
+  background: #FBF5F3;
 }
 
 .fourStepInner {
@@ -868,7 +887,7 @@ header .rightNavLinks .navLink {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.33;
-  color: #404040;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -877,7 +896,7 @@ header .rightNavLinks .navLink {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin-bottom: 40px;
 }
 
@@ -886,7 +905,7 @@ header .rightNavLinks .navLink {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin: 0;
   padding-bottom: 3px;
 }
@@ -910,7 +929,7 @@ header .rightNavLinks .navLink {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background: #1095bb;
+  background: #012439;
   z-index: 2;
 }
 
@@ -920,7 +939,7 @@ header .rightNavLinks .navLink {
 
 .numberLine:after {
   content: "";
-  background-color: #1095bb;
+  background-color: #023f64;
   width: 2px;
   position: absolute;
   left: 11px;
@@ -955,7 +974,7 @@ header .rightNavLinks .navLink {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.33;
-  color: #404040;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -971,7 +990,7 @@ header .rightNavLinks .navLink {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -993,7 +1012,7 @@ header .rightNavLinks .navLink {
   border-radius: 50%;
   position: absolute;
   top: 9px;
-  background-color: #404040;
+  background-color: #212529;
   left: -12px;
 }
 
@@ -1015,19 +1034,19 @@ header .rightNavLinks .navLink {
 }
 
 .colorSquare .colorSquareGreen {
-  background-color: #22db94;
+  background-color: #FF6B6B;
 }
 
 .colorSquare .colorSquarePink {
-  background-color: #ff5993;
+  background-color: #FFE66D;
 }
 
 .colorSquare .colorSquareBlue {
-  background-color: #31a8d8;
+  background-color: #1A535C;
 }
 
 .colorSquare .colorSquareYellow {
-  background-color: #fddc2f;
+  background-color: #4ECDC4;
 }
 
 .sectionTechnologies  .sectionInner {
@@ -1062,7 +1081,7 @@ header .rightNavLinks .navLink {
 
 .checkboxLine.lineBtm:before {
   content: "";
-  background-color: #1095bb;
+  background-color: #023f64;
   width: 2px;
   position: absolute;
   left: 11px;
@@ -1077,7 +1096,8 @@ header .rightNavLinks .navLink {
 }
 
 .whatWeDoWrap .yourDeveloperGradient {
-  background-image: linear-gradient(125deg, #3d6387, #739ec6);
+  /*background-image: linear-gradient(125deg, #3d6387, #739ec6);*/
+  background-image: linear-gradient(125deg, #f47a21, #f79855);
 }
 
 .yourDeveloperGradient .allBannerSection {
@@ -1091,7 +1111,7 @@ h2.commonTitleh2 {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.33;
-  color: #404040;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -1100,7 +1120,7 @@ p.commonDetailPara {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
 }
 
 .fullyDedicatedWrap {
@@ -1179,7 +1199,7 @@ p.commonDetailPara {
   border-radius: 50%;
   position: absolute;
   top: 12px;
-  background-color: #404040;
+  background-color: #212529;
   left: -15px;
 }
 
@@ -1215,7 +1235,7 @@ p.commonDetailPara {
 }
 
 footer h4 {
-  color: #404040;
+  color: #212529;
   font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1296,6 +1316,7 @@ footer .contactBoxes img.leadersImg2{
   position: relative;
   height: 550px;
   padding-top: 0px;
+  background-image: linear-gradient(#fbf5f3, #f2dfd9), radial-gradient(circle at 3% 19%, #e6bfb3,#eccfc6 );
 }
 
 .sliderContentWrap .sliderTitle {
@@ -1317,13 +1338,14 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .sliderContentWrap {
-  background-color: rgba(160, 210, 245, .75);
+  /*background-color: rgba(160, 210, 245, .75);*/
   position: absolute;
   padding: 15px 20px;
   bottom: 15px;
   width: 100%;
   max-width: 850px;
   left: 20px;
+  background-color: rgba(251,245,243,.75);
 }
 
 .fulldelicatedMemberWrap .slide1 {
@@ -1372,7 +1394,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-prev {
-  background-color: #a0d2f5;
+  background-color: rgb(251, 245, 243);
   border-radius: 50%;
   font-size: 0px;
   background-size: 10px 19px;
@@ -1392,7 +1414,8 @@ footer .contactBoxes img.leadersImg2{
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-next {
   width: 35px;
   height: 35px;
-  background-color: #a0d2f5;
+  /*background-color: #a0d2f5;*/
+  background-color: rgb(251, 245, 243);
   border-radius: 50%;
   font-size: 0px;
   background-size: 10px 19px;
@@ -1426,11 +1449,15 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .whatWeDoWrap .gredientWrap.whyPolansGredient {
-  background-image: linear-gradient(rgba(103, 163, 211, .12), rgba(103, 163, 211, .12)), radial-gradient(circle at 50% -13%, #88e89b, #46c18a 50%, #21af93);
+/*  background-image: linear-gradient(rgba(103, 163, 211, .12), rgba(103, 163, 211, .12)), radial-gradient(circle at 50% -13%, #88e89b, #46c18a 50%, #21af93);*/
+  background-image: linear-gradient(rgba(1, 36, 57, .12), rgba(1, 36, 57, .12)), radial-gradient(circle at 50% -13%, #024e7e, #023f64 50%, #012439);
+
+
 }
 
 .whatWeDoWrap .gredientWrap.aboutUsBannerGredientt {
-  background-image: linear-gradient(180deg, rgba(239, 154, 71, .51), rgba(237, 151, 71, 0)), linear-gradient(102deg, #e38448, rgba(245, 157, 64, .98))
+  /*background-image: linear-gradient(180deg, rgba(239, 154, 71, .51), rgba(237, 151, 71, 0)), linear-gradient(102deg, #e38448, rgba(245, 157, 64, .98))*/
+  background-image: linear-gradient(125deg, #f47a21, #f79855);
 }
 
 .aboutPolandBox h2 {
@@ -1449,7 +1476,7 @@ footer .contactBoxes img.leadersImg2{
   display: block;
   width: 80px;
   height: 3px;
-  background-color: #40b894;
+  background-color: #012439;
   margin-top: 15px;
 }
 
@@ -1457,7 +1484,7 @@ footer .contactBoxes img.leadersImg2{
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
 }
 
 .aboutPolandBox img {
@@ -1578,13 +1605,13 @@ header.bg-transparent.bg-white .logoWrap svg {
 }
 
 header.bg-white .navLink a {
-  color: #404040;
+  color: #212529;
 }
 
 header.bg-transparent.bg-white .navLink a:hover,
 header.bg-transparent.bg-white .navLink.active a,
 header.bg-transparent.bg-white .contactUsBtn:hover {
-  color: #404040;
+  color: #212529;
 }
 
 header {
@@ -1596,7 +1623,7 @@ header.bg-transparent.bg-white-click {
 }
 
 header.bg-transparent.bg-white-click .logoWrap p {
-  color: #404040;
+  color: #212529;
 }
 
 header.bg-transparent.bg-white-click .logoWrap svg {
@@ -1605,12 +1632,12 @@ header.bg-transparent.bg-white-click .logoWrap svg {
 
 header.bg-transparent.bg-white-click .toggleIcon span::before,
 header.bg-transparent.bg-white-click .toggleIcon span::after {
-  background: #404040 !important;
+  background: #212529 !important;
 }
 
 header.bg-transparent.bg-white .contactUsBtn {
-  border: 1px solid #404040;
-  color: #404040;
+  border: 1px solid #212529;
+  color: #212529;
 }
 .ourStoryInner .bgImageWrap {
   height: auto;
@@ -1631,13 +1658,14 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .ourStoryInner a,
-.ourStoryInner a:hover {
+.ourStoryInner a:hover,.faqDescrip a {
   text-decoration: none;
-  color: #3e95ff;
+  color: #ed8c3d;
 }
 
 .lederShipWrap {
-  background-color: #f1f1f3;
+  /*background-color: #f1f1f3;*/
+  background-color: #FBF5F3;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -1645,7 +1673,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 #Leadership {
-  background-color: #f1f1f3;
+  /*background-color: #f1f1f3;*/
+  background-color: #FBF5F3;
 }
 
 #Leadership.slidingWrap {
@@ -1707,7 +1736,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 .owl-dot  span {
   width: 7px !important;
   height: 7px !important;
-  background-color: #404040 !important;
+  background-color: #212529 !important;
   border-radius: 50% !important;
   display: block !important;
 }
@@ -1831,8 +1860,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .faqSectionTitle {
   margin-top: 40px;
-  color: #404040;
-  opacity: .5;
+  color: #ed8c3d;
+  opacity: 1;
   font-size: 16px;
   letter-spacing: .6px;
   margin-bottom: 20px;
@@ -1840,11 +1869,13 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .faqSectionTitle:after {
   content: "";
-  background-color: #d8d8d8;
+  /*background-color: #d8d8d8;*/
+  background-color: #ed8c3d;
   width: 80px;
   height: 3px;
   display: block;
   margin-top: 15px;
+  opacity: .6;
 }
 
 .singleFaqQuestions a {
@@ -1852,7 +1883,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   position: relative;
   cursor: pointer;
   padding: 16px 35px 16px 0;
@@ -1865,7 +1896,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
   margin-bottom: 25px;
 }
 
@@ -1908,7 +1939,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: .4px;
-  color: #404040;
+  color: #212529;
 }
 
 .carrersBannerWrap {
@@ -2066,7 +2097,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .siliconSection {
   padding: 50px 0;
-  background-color: #fe6678;
+  background-color: #f47a21;
   font-family: "proxima-nova", "Proxima Nova", sans-serif;
   font-size: 22px;
   color: #ffffff;
@@ -2188,7 +2219,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .slideToViewJobs {
-  background: #fd6879;
+  background: #f47a21;
   border-radius: 7px;
   width: 284px;
   height: 75px;
@@ -2213,11 +2244,12 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .featuredJobs {
   padding: 100px 0 150px 0;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   font-size: 22px;
   color: #4a4a4a;
   line-height: 30px;
   text-align: center;
+  background-color: #fbf5f3;
 }
 
 .featuredJobs h3 {
@@ -2230,9 +2262,16 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .featuredJobs  p a,
 .featuredJobs  p a:hover {
-  color: #5194E2;
+  color: #f47a21;
   text-decoration: none;
   cursor: pointer;
+}
+.featuredJobs  p a{
+  color: #012439;
+}
+
+.featuredJobs  p a:hover{
+  color: #f47a21
 }
 
 .jobListing {
@@ -2275,8 +2314,8 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .jobListing .jobFDetail .applyNowBtn {
-  background: #4a4a4a;
-  background-color: rgb(74, 74, 74);
+  /*background: #4a4a4a;*/
+  background-color: #012439;
   border-radius: 100px;
   min-width: 216px;
   height: 50px;
@@ -2290,7 +2329,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .jobListing .jobFDetail .applyNowBtn:hover {
-  background-color: #000;
+  background-color: #f47a21;
   text-decoration: none;
 }
 
@@ -2585,15 +2624,21 @@ footer p,
 footer a {
   font-size: 15px;
   line-height: 21px;
-  color: #767676;
+  /*color: #767676;*/
+  color: #212529;
+  opacity: .6;
 }
 
 footer svg {
   fill: rgba(64, 64, 64, .2);
 }
+footer .socialMedia a:hover{
+  opacity: 1;
+}
 
 footer svg:hover {
-  fill: #4ba9ff;
+  /*fill: #4ba9ff;*/
+  fill: rgb(244, 122, 33);
 }
 
 footer {
@@ -2615,7 +2660,7 @@ footer .aboutUsWrap {
 }
 
 footer h3 {
-  color: #404040;
+  color: #212529;
   font-size: 14px;
   font-weight: 600;
   -ms-flex: 0 0 100%;
@@ -2625,14 +2670,17 @@ footer h3 {
 footer .links a {
   display: block;
   font-size: 15px;
-  color: #767676;
+  /*color: #767676;*/
+  color: #212529;
 }
 
 footer .links a:hover {
   font-size: 15px;
-  color: #4ba9ff;
+  /*color: #4ba9ff;*/
+  color: rgb(244, 122, 33);
   font-weight: 600;
   text-decoration: none;
+  opacity: 1;
 }
 
 footer .linksWrap {

@@ -2,16 +2,13 @@
 	.section {
 		height: 600px;
 	}
-
 	#slide1.section .recentlyPublishedWrap {
 		height: calc(100% - 116px);
 	}
-
 	.rightNavLinks.show ul {
 		height: 400px;
 		overflow: auto;
 	}
-
 }
 
 @media screen and (max-height:380px) {
@@ -19,15 +16,12 @@
 		height: 250px;
 		overflow: auto;
 	}
-
-
 }
 
 @media screen and (min-width:1300px) {
 	.leaderCaption .leaderCaptionText:last-child {
 		padding-left: 104px;
 	}
-
 	.leaderCaption .leaderCaptionText:first-child {
 		padding-left: 0px;
 	}
@@ -39,7 +33,6 @@
 		width: auto;
 		max-width: 650px;
 	}
-
 }
 
 @media screen and (max-width:1200px) {
@@ -55,12 +48,10 @@
 	.leaderCaption .leaderCaptionText:last-child {
 		padding-left: 15%;
 	}
-
 	.leaderCaption {
 		max-width: 465px;
 		width: 56%;
 	}
-
 	.leaderMainCaptionContainer {
 		left: 0px;
 		top: auto;
@@ -69,7 +60,6 @@
 		background-image: linear-gradient(270deg, #f6f5f6, hsla(300, 5%, 96%, .72) 44%, hsla(300, 5%, 96%, 0) 60%, hsla(300, 5%, 96%, 0));
 		padding: 5px 0 5px 30px;
 	}
-
 	.sliderContentWrap {
 		width: 100%;
 		max-width: 508px;
@@ -89,15 +79,12 @@
 	footer .footerCopy {
 		margin: 45px 0 20px;
 	}
-
 	.sectionOneWrap .extendedDevelopmentWrap h1 {
 		max-width: 500px
 	}
-
 	.extendedDevelopmentWrap h1 {
 		max-width: 385px;
 	}
-
 	.ghostBar {
 		display: flex;
 		bottom: 0px;
@@ -270,7 +257,7 @@
 		left: 0;
 		right: 0;
 		height: 2px;
-		background: #404040;
+		background: #212529;
 		transition: background .3s ease;
 	}
 
@@ -281,7 +268,7 @@
 		left: 0;
 		width: 100%;
 		height: 2px;
-		background-color: #404040;
+		background-color: #212529;
 		content: "";
 	}
 
@@ -361,9 +348,9 @@
 		height: 55px;
 		margin: 0 auto;
 		padding: 14px 0 10px;
-		border: 1px solid #404040;
+		border: 1px solid #212529;
 		border-radius: 2px;
-		color: #404040;
+		color: #212529;
 		font-size: 25px;
 		text-decoration: none;
 		text-align: center;
@@ -412,13 +399,13 @@
 		width: 100%;
 	}
 
-	.blueOverlay {
+	/*.blueOverlay {
 		background: transparent;
 	}
 
 	.greenOverlay {
 		background: transparent;
-	}
+	}*/
 
 	.overlayOrange {
 		background: rgba(237, 140, 61, .8);
@@ -442,8 +429,8 @@
 	}
 
 	.sectionThereWrap {
-		background-image: url(../images/fourthSectionTablet.jpg);
-		background-position: 1% -80px;
+		/*background-image: url(../images/fourthSectionTablet.jpg);*/
+		background-position: 26% -80px;
 	}
 
 	.sectionFourWrap {
@@ -469,14 +456,14 @@
 	}
 
 	header.bg-transparent.bg-white .toggleIcon span {
-		background: #404040 !important;
+		background: #212529 !important;
 	}
 
 	header.bg-transparent.bg-white .toggleIcon span:before,
 	header.bg-transparent.bg-white .toggleIcon span:after,
 	header.bg-white .toggleIcon span:before,
 	header.bg-white .toggleIcon span:after {
-		background: #404040 !important;
+		background: #212529 !important;
 	}
 
 	header.bg-transparent .toggleIcon span::before,
@@ -586,7 +573,7 @@
 	header.bg-transparent .rightNavLinks  .navLink.active a,
 	header.bg-transparent .rightNavLinks  .contactUsBtn:hover,
 	header.bg-transparent .rightNavLinks  .navLink a {
-		color: #404040 !important;
+		color: #212529 !important;
 	}
 
 	.aboutPolandContainer .aboutPolandBox {
@@ -628,8 +615,8 @@
 	}
 
 	header.bg-transparent.bg-white .contactUsBtn {
-		border: 1px solid #404040;
-		color: #404040;
+		border: 1px solid #212529;
+		color: #212529;
 	}
 
 	.carrersStoryWrap .columnsWrap .column:first-child {
@@ -807,7 +794,7 @@
 	}
 
 	footer .linksWrap {
-		width: 100%;
+		width: 100%;/
 		margin-right: 0px;
 		margin-bottom: 30px;
 	}
