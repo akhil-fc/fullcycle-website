@@ -130,7 +130,7 @@ $(function() {
           			});
 		        // end
 
-		        
+
         $(window).on('scroll',function(){
                 if ($(window).width() > 991) {
                 var sticky = $('header'),
