@@ -132,7 +132,7 @@ $(function() {
 
 		        
         $(window).on('scroll',function(){
-                if ($(window).width() > 960) {
+                if ($(window).width() > 991) {
                 var sticky = $('header'),
                 scroll = $(window).scrollTop();
                
