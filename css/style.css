@@ -55,12 +55,12 @@ header .logoWrap img.logoDark{
 height: 22px !important;
   margin-left: 0px;
 }
-header.bg-white .logoNormal,header .logoDark,header.bg-white-click .logoNormal{
+/*header.bg-white .logoNormal,header .logoDark,header.bg-white-click .logoNormal{
   display: block;
 }
 header .logoNormal,header.bg-white .logoDark,header.bg-white-click .logoDark{
   display: none;
-}
+}*/
 header .logoWrap p {
   font-size: 12px;
   opacity: .5;
@@ -129,9 +129,9 @@ header  .contactUsBtn {
   transition: right .25s 0s;
   line-height: 100%;
 }
-header .contactUsBtn:hover{
+/*header .contactUsBtn:hover{
   border: 1px solid #f47a21 ;
-}
+}*/
 
 header.bg-transparent .navLink a {
   color: #fff;
@@ -432,8 +432,8 @@ header.bg-transparent.bg-white .logoWrap p {
  /* background-image: url(../images/fourthSection_3.jpg);
   background-position: 0 70px;
   background-size: cover;*/
-  background-image: url(../images/mapTest.png);
-  background-position: 220px 62%;
+  background-image: url(../images/mapTest.jpeg);
+  background-position: 240px 62%;
   background-size: cover;
   height: 100%;
 }
@@ -523,7 +523,7 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .clientBarDetail img {
-  height: 40px;
+  height: 44px;
   margin-bottom: 20px;
 }
 
@@ -842,7 +842,7 @@ header .rightNavLinks .navLink {
   padding-left: 50px;
   padding-right: 50px;/*
   background: #f4f9fc;*/
-  background: #FBF5F3;
+  background: #f2f2f2;
 }
 
 .fourStepInner {
@@ -1312,11 +1312,11 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap .sliderWrap .item {
-  background-image: linear-gradient(rgba(237, 244, 255, .8), rgba(237, 244, 255, .8)), radial-gradient(circle at 3% 19%, #60f3ff, #b8ebff);
+  /*background-image: linear-gradient(rgba(237, 244, 255, .8), rgba(237, 244, 255, .8)), radial-gradient(circle at 3% 19%, #60f3ff, #b8ebff);*/
   position: relative;
   height: 550px;
   padding-top: 0px;
-  background-image: linear-gradient(#fbf5f3, #f2dfd9), radial-gradient(circle at 3% 19%, #e6bfb3,#eccfc6 );
+  background-image: linear-gradient(#f6a76f, #f49957), radial-gradient(circle at 3% 19%, #f38a3f, #f17925 );
 }
 
 .sliderContentWrap .sliderTitle {
@@ -1345,7 +1345,7 @@ footer .contactBoxes img.leadersImg2{
   width: 100%;
   max-width: 850px;
   left: 20px;
-  background-color: rgba(251,245,243,.75);
+  background-color: rgba(241, 121, 37,.5);
 }
 
 .fulldelicatedMemberWrap .slide1 {
@@ -1394,7 +1394,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-prev {
-  background-color: rgb(251, 245, 243);
+  background-color: rgba(241, 121, 37,.5);
   border-radius: 50%;
   font-size: 0px;
   background-size: 10px 19px;
@@ -1415,7 +1415,7 @@ footer .contactBoxes img.leadersImg2{
   width: 35px;
   height: 35px;
   /*background-color: #a0d2f5;*/
-  background-color: rgb(251, 245, 243);
+  background-color: rgba(241, 121, 37,.5);
   border-radius: 50%;
   font-size: 0px;
   background-size: 10px 19px;
@@ -1665,7 +1665,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .lederShipWrap {
   /*background-color: #f1f1f3;*/
-  background-color: #FBF5F3;
+  background-color: #f2f2f2;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -1674,7 +1674,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 #Leadership {
   /*background-color: #f1f1f3;*/
-  background-color: #FBF5F3;
+  background-color: #f2f2f2;
 }
 
 #Leadership.slidingWrap {
@@ -2249,7 +2249,7 @@ header.bg-transparent.bg-white .contactUsBtn {
   color: #4a4a4a;
   line-height: 30px;
   text-align: center;
-  background-color: #fbf5f3;
+  background-color: #f2f2f2;
 }
 
 .featuredJobs h3 {
@@ -2338,7 +2338,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .featuredJobs {
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .slideToViewJobs.display-none {
@@ -2619,7 +2619,10 @@ header.bg-transparent.bg-white .contactUsBtn {
   /*color: #e98481;*/
   color: rgba(244,122,33,.8);
 }
-
+.mapImage{
+  width: 100%;
+  height: auto;
+}
 footer p,
 footer a {
   font-size: 15px;
