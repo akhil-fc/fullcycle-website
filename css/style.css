@@ -470,12 +470,15 @@ header.bg-transparent.bg-white .logoWrap p {
   line-height: 1;
 }
 .sectionFourWrap .clientNames{
-      max-width: 856px;
+      max-width: 988px;
       position: absolute;
       bottom: 0px;
       right: 0px;
-      width: 856px;
+      width: 100%;
       z-index: 9;
+}
+.sectionFourWrap .clientNames div:last-child{
+  padding-left: 0px;
 }
 .sectionThereWrap {
   position: relative;
