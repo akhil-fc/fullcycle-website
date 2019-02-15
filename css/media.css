@@ -553,7 +553,7 @@
 	.yourDeveloperGradient .allBannerSection {
 		/*background-image: url(../images/developers-small.png);*/
 		background-position: right bottom;
-		background-size: 50%;
+		background-size: 50% ;
 	}
 
 	.allBannerSection .preDescription {
