@@ -88,7 +88,7 @@ header .logoWrap p {
   color: #212529;
   margin-bottom: 0px;
   font-weight: 300;
-  margin-top: 5px;
+  margin-top: 0px;
   text-transform: uppercase;
 }
 
@@ -662,9 +662,10 @@ header .rightNavLinks .navLink {
 }
 
 .bannerImage {
-  width: 86%;
-  max-height: 80%;
-  right: -9%;
+  /*width: 86%;*/
+  /*max-height: 80%;*/
+  /*right: -9%;*/
+  right: 0px;
   position: absolute;
   bottom: 0px;
 }
@@ -712,12 +713,14 @@ header .rightNavLinks .navLink {
 }
 
 .allBannerSection .arrowDownIcon {
-  background-image: url(https://www.sofomo.com/static/media/ScrollArrow.826e039c.svg);
+  background-image: url('../images/next.png');
   background-repeat: no-repeat;
   width: 32px;
-  height: 16px;
+  height: 32px;
   cursor: pointer;
   display: inline-block;
+  background-size: 100% 100%;
+  transform: rotate(90deg);
 }
 
 .allBannerSection .arrowWrap {
@@ -790,8 +793,7 @@ header .rightNavLinks .navLink {
   justify-content: space-between;
 }
 
-.checkboxLine {
-  background-image: url(https://www.sofomo.com/static/media/checkmark.e2b10722.svg);
+.checkboxLine {  
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center 4px;
@@ -799,6 +801,13 @@ header .rightNavLinks .navLink {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: relative;
+}
+.checkboxLine i{
+  position: relative;
+  left: 3px;
+  background: #fff;
+  font-size: 24px;
+  color: #023f64;
 }
 
 .checkboxLine:after {
@@ -1127,7 +1136,7 @@ header .rightNavLinks .navLink {
 }
 
 .whatWeDoWrap {
-  border: 1px solid #d8d8d8;
+  /*border: 1px solid #d8d8d8;*/
   overflow: hidden;
 }
 
@@ -1302,13 +1311,13 @@ footer .contactBoxes img.leadersImg2{
 
 .instagramImageWrap .instagramImage.image2 {
   padding-top: 80%;
-  background-image: url('../images/insta2.png');
+  background-image: url('../images/insta3.jpg');
   margin-bottom: 0px;
 }
 
 .instagramImageWrap .instagramImage.image3 {
   padding-top: 80%;
-  background-image: url('../images/insta2.png');
+  background-image: url('../images/insta3.jpg');
   margin-bottom: 8px;
 }
 
@@ -1352,7 +1361,7 @@ footer .contactBoxes img.leadersImg2{
   position: relative;
   height: 550px;
   padding-top: 0px;
-  background-image: linear-gradient(#f6a76f, #f49957), radial-gradient(circle at 3% 19%, #f38a3f, #f17925 );
+  background-image: linear-gradient(#26c0b0, #22aa9d), radial-gradient(circle at 3% 19%, #1d9589, #1d9287);
 }
 
 .sliderContentWrap .sliderTitle {
@@ -1381,7 +1390,7 @@ footer .contactBoxes img.leadersImg2{
   width: 100%;
   max-width: 850px;
   left: 20px;
-  background-color: rgba(241, 121, 37,.5);
+  background-color: rgba(29, 146, 135,.5);
 }
 
 .fulldelicatedMemberWrap .slide1 {
@@ -1430,35 +1439,35 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-prev {
-  background-color: rgba(241, 121, 37,.5);
+  background-color: rgba(29, 146, 135,.5);
   border-radius: 50%;
   font-size: 0px;
-  background-size: 10px 19px;
+  background-size: 16px 16px;
   display: inline-block;
   cursor: pointer;
   width: 35px;
   height: 35px;
-  background-image: url(https://www.sofomo.com/static/media/white-arrow.f20572f4.svg);
+  background-image: url(../images/next.png);
   background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-right: 10px;
-  background-position: left 13px top 8px;
+  background-position: left 12px top 10px;
 }
 
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-next {
   width: 35px;
   height: 35px;
   /*background-color: #a0d2f5;*/
-  background-color: rgba(241, 121, 37,.5);
+  background-color: rgba(29, 146, 135,.5);
   border-radius: 50%;
   font-size: 0px;
-  background-size: 10px 19px;
+  background-size: 16px 16px;
   display: inline-block;
   cursor: pointer;
-  background-position: left 14px top 8px;
-  background-image: url(https://www.sofomo.com/static/media/white-arrow.f20572f4.svg);
+  background-position: left 12px top 10px;
+  background-image: url(../images/next.png);
   background-repeat: no-repeat;
 }
 
@@ -1947,8 +1956,9 @@ header.bg-transparent.bg-white .contactUsBtn {
 .singleFaqQuestions a:after {
   content: "";
   width: 15px;
-  height: 15px;
-  background-image: url(https://www.sofomo.com/static/media/plus-open.69742fa9.svg);
+  height: 15px;  
+  background-image: url(../images/add.png);
+  background-size: 100% 100%;
   position: absolute;
   top: 35%;
   right: 0;
@@ -1956,7 +1966,11 @@ header.bg-transparent.bg-white .contactUsBtn {
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
   opacity: .2;
+  display: inline-block;
+  line-height: 11px;
+  font-size: 25px;
 }
+
 
 .singleFaqQuestions a.showAnswer:after {
   -webkit-transform: rotate(45deg);
@@ -2103,19 +2117,32 @@ header.bg-transparent.bg-white .contactUsBtn {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.brilliantWrap h4 {
-  background-color: rgba(255, 255, 255, 0.85);
-  width: 1050px;
-  height: 232px;
+.overlayTransparentWhite{
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  z-index: 1;
+}
+.brilliantTextWrapper{
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 50px 40px 0 40px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+}
+
+.brilliantWrap h4 {
+  background-color: rgba(255, 255, 255, 0.85);  
+  padding: 50px 40px 0 40px;
+  text-align: center;  
+  width: 1050px;
+  height: 232px;
   /*font-family: "proxima-nova", "Proxima Nova", sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -2218,19 +2245,22 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .testiminialWrapper .singleFaqQuestions a:before {
-  content: '';
+  content:'';
   position: absolute;
   left: -7px;
   top: 19px;
-  background-image: url(https://www.sofomo.com/old_site/images/pluscircle.svg);
+  background-image: url(../images/plus-grey.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: 100% 100%;
   width: 23px;
-  height: 23px;
+  height: 23px;  
+  color: #b4b4b4;
+  font-size: 20px;
 }
 
 .testiminialWrapper .singleFaqQuestions a.showAnswer:before {
-  background-image: url(https://www.sofomo.com/old_site/images/minuscircle.svg);
+  background-image: url(../images/minus.png); 
 }
 
 .testiminialWrapper .singleFaqAnswer {

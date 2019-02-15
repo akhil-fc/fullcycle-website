@@ -692,6 +692,14 @@
 		position: relative;
 		text-align: center;
 	}
+	.brilliantWrap h4{
+		width: 100%;
+		max-width: 100%;
+	}
+	.brilliantTextWrapper{
+		width: 788px;
+    	max-width: 74%;
+	}
 
 }
 
@@ -1231,6 +1239,9 @@
 		background-position: 100%;
 		min-height: auto;
 	}
+	.checkboxLine i{
+		left: 1px;
+	}
 
 }
 
@@ -1249,8 +1260,11 @@
 		height: 164px;
 		line-height: 26px;
 		font-size: 26px;
-		max-width: 300px;
 		padding: 35px 45px 0 35px;
+		max-width: 100%;
+	}
+	.brilliantTextWrapper{
+		max-width: 300px;
 	}
 
 	.brilliantWrap {
