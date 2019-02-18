@@ -108,7 +108,7 @@
                        </div>
                        <div class="ContactBox-image" >
                           <img src="images/dhanya.jpg" alt="" class="first-img">
-                          <img src="images/sumina.jpg" alt="" class="second-img">                         
+                          <img src="images/sumina.jpg" alt="" class="second-img">                     
                        </div>
                     </div>
                     <div class="ContactBoxes-divider" ></div>
@@ -130,12 +130,12 @@
                  <div class="ContactMain-form" >
                     <div class="FormSection js-formSection" >
                        <span ></span>
-                       <form  class="Form"   >
-                          <p ><input type="text"  placeholder="Name"  class="InputText" ></p>
-                          <p ><input type="email" placeholder="Email" class="InputText"   ></p>
-                          <p ><input type="text"  placeholder="Subject"  class="InputText" ></p>
-                          <p ><textarea class="TextArea" placeholder="Tell us about your development needs"  ></textarea></p>
-                          <p ><button type="submit" class="FormButton" >Contact Us</button></p>
+                       <form  class="contact-form"   >
+                          <p ><input type="text"  name="name" placeholder="Name"  class="InputText" ></p>
+                          <p ><input type="email" name="email" placeholder="Email" class="InputText"   ></p>
+                          <p ><input type="text"  name="subject" placeholder="Subject"  class="InputText" ></p>
+                          <p ><textarea class="TextArea" name="description" placeholder="Tell us about your development needs"  ></textarea></p>
+                          <p ><button type="submit" id="contact-form-btn" class="FormButton" >Contact Us</button></p>
                        </form>
                     </div>
                  </div>
@@ -147,5 +147,20 @@
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
+        <script type="text/javascript">
+          var $form = $('form#contact-form');
+          var url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbzOTPs3PBBtWnZlQMJwaEGHfUMKrDygWMoXWgdHSlKEgXyQJw/exec'
+          $('#contact-form-btn').on('click', function(e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+              url: url,
+              method: "GET",
+              dataType: "jsonp",
+              data: $form.serializeObject()
+            }).success(
+              console.log("success")
+            );
+          })
+        </script>
     </body>
     </html>

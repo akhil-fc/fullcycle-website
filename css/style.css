@@ -1147,7 +1147,7 @@ header .rightNavLinks .navLink {
 
 .yourDeveloperGradient .allBannerSection {
   /*background-image: url(../images/developers-big2.png);*/
-  background-image:url(../images/developersBgMain.jpg);
+  background-image:url(../images/developersBgMain.png);
   background-repeat: no-repeat;
   background-position: 117% bottom;
   background-size: 52%;
@@ -1505,6 +1505,9 @@ footer .contactBoxes img.leadersImg2{
   /*background-image: linear-gradient(180deg, rgba(239, 154, 71, .51), rgba(237, 151, 71, 0)), linear-gradient(102deg, #e38448, rgba(245, 157, 64, .98))*/
   background-image: linear-gradient(125deg, #f47a21, #f79855);
 }
+.whatWeDoWrap .bannerImage  img{
+  max-width: 605px;
+}
 
 .aboutPolandBox h2 {
   opacity: .5;
@@ -1687,8 +1690,10 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 .ourStoryInner .bgImageWrap {
   height: auto;
-  background-image: url(../images/piotr-with-team2.jpg);
-  background-position: 45%;
+  background-image: url(../images/group.jpg);
+  background-position: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .ourStoryInner {
