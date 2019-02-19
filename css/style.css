@@ -664,7 +664,7 @@ header .rightNavLinks .navLink {
 }
 
 .allBannerSection {
-  height: 100vh;
+  height: calc(100vh - 79px);
   position: relative;
   overflow: hidden;
   padding-left: 50px;
