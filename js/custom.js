@@ -21,7 +21,7 @@ $(function() {
 	        
 	        
 	    });
-	    $('#menu a[href*=#]:not([href=#]), .slideToViewJobs').click(function() {
+	    $('#menu a[href*=#]:not([href=#]), .slideToViewJobs, .carrersStoryInnerWrapper a').click(function() {
 	    	// alert('home page');
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	       var target = $(this.hash);
