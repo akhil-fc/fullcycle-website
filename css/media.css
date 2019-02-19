@@ -678,16 +678,17 @@
 		max-width: 74%;
 	}
 
-	.ContactOuter {
+	.cst-ContactOuter {
 		margin: 0 auto;
 	}
 
-	.ContactMain-form {
-		width: auto;
+	.cst-ContactMain-form {
+		width: 100%;
 		margin: 50px;
+		max-width: 100%;
 	}
 
-	.ContactTop {
+	.cst-ContactTop {
 		min-height: 340px;
 		position: relative;
 		text-align: center;
@@ -1193,7 +1194,7 @@
 		padding: 40px 0 40px 0;
 	}
 
-	.ContactBox-textSection {
+	.cst-ContactBox-textSection {
 		line-height: 1.5em;
 		font-size: 14px;
 		margin-right: 15px;
@@ -1202,30 +1203,30 @@
 		flex-grow: 1;
 	}
 
-	.ContactMain-contact {
+	.cst-ContactMain-contact {
 		flex-shrink: 0;
 	}
 
-	.ContactMain-contact,
-	.ContactMain-formSection {
+	.cst-ContactMain-contact,
+	.cst-ContactMain-formSection {
 		width: 100%;
 	}
 
-	.ContactMain {
+	.cst-ContactMain {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 
-	.ContactTop-subtitle {
+	.cst-ContactTop-subtitle {
 		font-size: 17px;
 	}
 
-	.ContactMain-form {
+	.cst-ContactMain-form {
 		width: auto;
 		margin: 50px 5px;
 	}
 
-	.ContactTop-title {
+	.cst-ContactTop-title {
 		font-size: 32px;
 	}
 	footer .contactBoxes img{

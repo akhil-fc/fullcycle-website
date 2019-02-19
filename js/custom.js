@@ -63,7 +63,7 @@ $(function() {
 	    // end
 	    // banner translate effect
 	    	$(function(){
-              $('.allBannerSection, .polandImageWrap, .ContactTop, #slide1').each(function() {
+              $('.allBannerSection, .polandImageWrap, .cst-ContactTop, #slide1').each(function() {
                 var off = $(this).offset().top
                 $(this).data('orig-offset', off);
               });
@@ -82,13 +82,13 @@ $(function() {
                   	$(this).css('opacity', '1');
                   }
                  });
-                 $('.ContactTop').each(function(){
+                 $('.cst-ContactTop').each(function(){
                   var off = $(this).data('orig-offset');
                   if (scrollTop >= off) {
                     var translate =  (scrollTop - off) / $(window).height() * 100;
                     var opacity = 1 - (1.8*scrollTop / 1000);                    
-                    $(this).parent().find('.ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'});
-                    $(this).find('.ContactTop-backgroundImage').css('opacity', opacity); 
+                    $(this).parent().find('.cst-ContactMain ').css({transform: 'translate3d(0,' + -translate*2 +'px,0)'});
+                    $(this).find('.cst-Contact-bg').css('opacity', opacity); 
                   }                
                  });
               });
