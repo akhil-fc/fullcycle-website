@@ -1172,7 +1172,8 @@ p.commonDetailPara {
 }
 
 .fullyDedicatedWrap {
-  background-image: url(../images/sync-hd.png), url(../images/icons-hd.png);
+  /*background-image: url(../images/sync-hd.png), url(../images/icons-hd.png);*/
+  background-image: url(../images/sync-hd.jpg);
   background-position: bottom, bottom;
   background-size: 100% auto, contain;
   background-repeat: no-repeat, no-repeat;
@@ -2820,6 +2821,18 @@ footer .fbIcon {
 
 .extendedDevelopmentWrap {
   z-index: 9;
+}
+.cst-ContactTop .blackOverlay{
+  background: rgba(0,0,0,.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 2;
+}
+.cst-Contact-textBox{
+  z-index: 3;
 }
 
 /* Feel free to change duration  */
