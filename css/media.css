@@ -436,13 +436,11 @@
 		background-position:;
 	}
 
-	.sectionThereWrap {
-		/*background-image: url(../images/fourthSectionTablet.jpg);*/
-		background-position: 26% -80px;
+	.sectionThereWrap {		
+		background-position: 200% 0px;
 	}
 
-	.sectionFourWrap {
-		/*background-image: url(../images/fifthSectionDesktop.jpg);*/
+	.sectionFourWrap {		
 		background-position: 63% 0;
 	}
 
@@ -769,9 +767,6 @@
 	}
 
 	.sectionTwoWrap {
-		/*background-image: url('../images/secondSectionMobile.jpg');*/
-		/*background-position: bottom;
-		background-size: cover;*/
 		background-repeat: no-repeat;
 		background-position: -120px;
 	}
@@ -1242,6 +1237,9 @@
 	}
 	.checkboxLine i{
 		left: 1px;
+	}
+	.sectionThereWrap {
+		background-position: 190% 25px;
 	}
 
 }

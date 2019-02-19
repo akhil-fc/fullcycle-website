@@ -449,12 +449,12 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .sectionThereWrap {
- /* background-image: url(../images/fourthSection_3.jpg);
+  background-image: url(../images/fourthSection_map.jpg);
   background-position: 0 70px;
-  background-size: cover;*/
-  background-image: url(../images/mapTest.jpeg);
-  background-position: 240px 62%;
   background-size: cover;
+  /*background-image: url(../images/mapTest.jpeg);
+  background-position: 240px 62%;*/
+ /* background-size: cover;*/
   height: 100%;
 }
 
