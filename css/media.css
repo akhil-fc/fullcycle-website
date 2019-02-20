@@ -607,7 +607,7 @@
 		margin-bottom: 60px;
 	}
 
-	.map__layer___31Zk2 {
+	.whyIndiaMapLayer {
 		background-size: 155%;
 	}
 
@@ -983,12 +983,12 @@
 		margin-bottom: 40px;
 	}
 
-	.map__container___-jn8h {
+	.whyIndiaMapContainer {
 		height: calc(100vh - 50px);
 		max-height: auto;
 	}
 
-	.map__layer___31Zk2 {
+	.whyIndiaMapLayer {
 		background-size: cover;
 	}
 

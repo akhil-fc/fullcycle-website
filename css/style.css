@@ -200,7 +200,7 @@ header.bg-transparent.bg-white .logoWrap p {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background-image:linear-gradient(120deg, rgba(244, 122, 33, .9), rgba(249, 182, 133, .96) 44%, rgba(247, 152, 85, .71) 63%, rgba(246, 138, 60, .34));
+  background-image:linear-gradient(120deg, rgba(244, 122, 33, 1), rgba(249, 182, 133, .96) 44%, rgba(247, 152, 85, .71) 63%, rgba(246, 138, 60, .34));
 }
 
 .readOurGuideBtn {
@@ -1547,6 +1547,7 @@ footer .contactBoxes img.leadersImg2{
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding-bottom:60px;
 }
 
 .mapContainer {
@@ -1555,17 +1556,17 @@ footer .contactBoxes img.leadersImg2{
   padding-bottom: 60px;
 }
 
-.map__container___-jn8h {
+.whyIndiaMapContainer {
   height: 56vw;
   max-height: 900px;
 }
-.map__layerBg___e7B9e {
-  background-image: url(https://www.sofomo.com/static/media/map-bg.5a34fe87.jpg);
+.whyIndiaMapLayerBg {
+  background-image: url(../images/map-bg.5a34fe87.jpg);
 }
-.map__layer___31Zk2 {
+.whyIndiaMapLayer {
   background-size: 150%;
 }
-.map__layer___31Zk2 {
+.whyIndiaMapLayer {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1576,31 +1577,27 @@ footer .contactBoxes img.leadersImg2{
   top: 0;
 }
 
-.map__layerIcons1___3sr2s {
-  background-image: url(https://www.sofomo.com/static/media/map-icons1.5d0eb905.svg);
+.whyIndiaMapLayerIcons1 {
+  background-image: url(../images/map-icons1.5d0eb905.svg);
 }
 
-.map__layer___31Zk2 {
+.whyIndiaMapLayer {
   background-size: 150%;
 }
 
-.map__layerIcons2___2OH9m {
-  background-image: url(https://www.sofomo.com/static/media/map-icons2.b38a00c1.svg);
+.whyIndiaMapLayerIcons2 {
+  background-image: url(../images/map-icons2.svg);
 }
 
-.map__layer___31Zk2 {
-  background-size: 150%;
+
+
+.whyIndiaMapLayerLogos1 {
+  background-image: url(../images/map-logos1_fc.png);
 }
 
-.map__layerLogos1___1cqbd {
-  background-image: url(https://www.sofomo.com/static/media/map-logos1.5b305d32.png);
-}
 
-.map__layer___31Zk2 {
-  background-size: 150%;
-}
 
-.map__layer___31Zk2 {
+.whyIndiaMapLayer {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1611,11 +1608,11 @@ footer .contactBoxes img.leadersImg2{
   top: 0;
 }
 
-.map__layerLogos2___3M3h4 {
-  background-image: url(https://www.sofomo.com/static/media/map-logos2_2.fea561be.png);
+.whyIndiaMapLayerLogos2 {
+  background-image: url(../images/map-logos2_fc.png);
 }
 
-.map__container___-jn8h {
+.whyIndiaMapContainer {
   margin-bottom: 60px;
   position: relative;
 }
