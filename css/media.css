@@ -1258,6 +1258,9 @@
 	.sectionThereWrap {
 		background-position: 190% 25px;
 	}
+	.cst-ContactBox-image > img.second-img{
+		display:block;
+	}
 
 }
 
