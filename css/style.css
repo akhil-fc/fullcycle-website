@@ -200,7 +200,10 @@ header.bg-transparent.bg-white .logoWrap p {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background-image:linear-gradient(120deg, rgba(244, 122, 33, .8), rgba(249, 182, 133, .96) 44%, rgba(247, 152, 85, .71) 63%, rgba(246, 138, 60, .34));
+  background-image:
+    linear-gradient(120deg, rgba(216, 98, 14, .8),
+    rgba(240, 109, 15, .8) 44%, 
+    rgba(241, 123, 39, .71) 63%, rgba(243, 138, 63, .34));
 }
 
 .readOurGuideBtn {
@@ -434,14 +437,7 @@ header.bg-transparent.bg-white .logoWrap p {
   position: absolute;
 }
 
-.overlayImage {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  background-image: url(https://www.sofomo.com/static/media/overlay_4.18671eef.svg);
-  background-size: cover;
-  background-position: 100% 100%;
-}
+
 
 .overlayImage svg {
   width: 100%;
@@ -451,9 +447,6 @@ header.bg-transparent.bg-white .logoWrap p {
   background-image: url(../images/fourthSection_map.jpg);
   background-position: 0 70px;
   background-size: cover;
-  /*background-image: url(../images/mapTest.jpeg);
-  background-position: 240px 62%;*/
- /* background-size: cover;*/
   height: 100%;
 }
 
@@ -535,7 +528,6 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 .darkBlueOverlay {
-  /*background: rgba(27, 80, 133, .7);*/
   background: rgba(244,122,33,.8);
   width: 43%;
   height: 100%;
@@ -604,7 +596,7 @@ header.bg-transparent.bg-white .logoWrap p {
   top: 55px;
   left: 0px;
   padding: 10px 20px;
-  background: #fff;  /*box-shadow: 0 2px 4px rgba(0,0,.03);*/
+  background: #fff;  
   overflow: auto;
   opacity: 0;
   transition: top .3s 0s, opacity .4s 0s;
@@ -646,17 +638,12 @@ header .rightNavLinks .navLink {
 }
 
 .whatWeDoWrap .gredientWrap {
-/*  background-image: radial-gradient(circle at 50% -13%, #04a9b9 4%, #178abd 50%, #1470b4);*/
-  /*background-image: radial-gradient(circle at 50% -13%, #04a9b9 4%, #178abd 50%, #1470b4);*/
   background-image: radial-gradient(circle at 50% -13%, #024e7e 4%, #023f64 50%, #012439);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 50%, 50%, 50%;
 }
 
 .bannerImage {
-  /*width: 86%;*/
-  /*max-height: 80%;*/
-  /*right: -9%;*/
   right: 0px;
   position: absolute;
   bottom: 0px;
@@ -1128,17 +1115,14 @@ header .rightNavLinks .navLink {
 }
 
 .whatWeDoWrap {
-  /*border: 1px solid #d8d8d8;*/
   overflow: hidden;
 }
 
 .whatWeDoWrap .yourDeveloperGradient {
-  /*background-image: linear-gradient(125deg, #3d6387, #739ec6);*/
   background-image: linear-gradient(125deg, #f47a21, #f79855);
 }
 
 .yourDeveloperGradient .allBannerSection {
-  /*background-image: url(../images/developers-big2.png);*/
   background-image:url(../images/developersBgMain.png);
   background-repeat: no-repeat;
   background-position: 117% bottom;
@@ -1171,7 +1155,6 @@ p.commonDetailPara {
 }
 
 .fullyDedicatedWrap {
-  /*background-image: url(../images/sync-hd.png), url(../images/icons-hd.png);*/
   background-image: url(../images/sync-hd.jpg);
   background-position: bottom, bottom;
   background-size: 100% auto, contain;
@@ -1350,8 +1333,7 @@ footer .contactBoxes img.leadersImg2{
   padding-top: 60px;
 }
 
-.fulldelicatedMemberWrap .sliderWrap .item {
-  /*background-image: linear-gradient(rgba(237, 244, 255, .8), rgba(237, 244, 255, .8)), radial-gradient(circle at 3% 19%, #60f3ff, #b8ebff);*/
+.fulldelicatedMemberWrap .sliderWrap .item {  
   position: relative;
   height: 550px;
   padding-top: 0px;
@@ -1377,7 +1359,6 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .sliderContentWrap {
-  /*background-color: rgba(160, 210, 245, .75);*/
   position: absolute;
   padding: 15px 20px;
   bottom: 15px;
@@ -1453,7 +1434,6 @@ footer .contactBoxes img.leadersImg2{
 .fulldelicatedMemberWrap .owl-carousel .owl-nav .owl-next {
   width: 35px;
   height: 35px;
-  /*background-color: #a0d2f5;*/
   background-color: rgba(29, 146, 135,.5);
   border-radius: 50%;
   font-size: 0px;
@@ -1488,14 +1468,13 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .whatWeDoWrap .gredientWrap.whyPolansGredient {
-/*  background-image: linear-gradient(rgba(103, 163, 211, .12), rgba(103, 163, 211, .12)), radial-gradient(circle at 50% -13%, #88e89b, #46c18a 50%, #21af93);*/
+
   background-image: linear-gradient(rgba(1, 36, 57, .12), rgba(1, 36, 57, .12)), radial-gradient(circle at 50% -13%, #024e7e, #023f64 50%, #012439);
 
 
 }
 
-.whatWeDoWrap .gredientWrap.aboutUsBannerGredientt {
-  /*background-image: linear-gradient(180deg, rgba(239, 154, 71, .51), rgba(237, 151, 71, 0)), linear-gradient(102deg, #e38448, rgba(245, 157, 64, .98))*/
+.whatWeDoWrap .gredientWrap.aboutUsBannerGredientt {  
   background-image: linear-gradient(125deg, #f47a21, #f79855);
 }
 .whatWeDoWrap .bannerImage  img{
@@ -1705,7 +1684,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .lederShipWrap {
-  /*background-color: #f1f1f3;*/
   background-color: #f2f2f2;
   position: relative;
   margin: 0 auto;
@@ -1714,7 +1692,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 #Leadership {
-  /*background-color: #f1f1f3;*/
   background-color: #f2f2f2;
 }
 
@@ -1910,7 +1887,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .faqSectionTitle:after {
   content: "";
-  /*background-color: #d8d8d8;*/
   background-color: #21a79b;
   width: 80px;
   height: 3px;
@@ -2147,7 +2123,6 @@ header.bg-transparent.bg-white .contactUsBtn {
   text-align: center;  
   width: 1050px;
   height: 232px;
-  /*font-family: "proxima-nova", "Proxima Nova", sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 60px;
@@ -2166,7 +2141,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 .siliconSection {
   padding: 50px 0;
   background-color: #f47a21;
-  /*font-family: "proxima-nova", "Proxima Nova", sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   color: #ffffff;
@@ -2316,7 +2290,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .featuredJobs {
   padding: 100px 0 150px 0;
-  /*background-color: #fafafa;*/
   font-size: 22px;
   color: #4a4a4a;
   line-height: 30px;
@@ -2386,7 +2359,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .jobListing .jobFDetail .applyNowBtn {
-  /*background: #4a4a4a;*/
   background-color: #012439;
   border-radius: 100px;
   min-width: 216px;
@@ -2602,7 +2574,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 .cst-InputText {
   font-size: 17px;
   font-weight: 600;
-  /*font-family: proxima-nova, proxima nova, sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   border: 1px solid transparent;
   outline: 0;
@@ -2615,7 +2586,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .cst-TextArea {
   font-weight: 600;
-  /*font-family: proxima-nova, proxima nova, sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   border: 1px solid transparent;
   overflow: auto;
@@ -2632,7 +2602,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 .cst-FormButton {
   font-weight: 600;
-  /*font-family: proxima-nova, proxima nova, sans-serif;*/
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   border: 0;
@@ -2679,7 +2648,6 @@ header.bg-transparent.bg-white .contactUsBtn {
 
 }
 .whyIndiaBtn,.whyIndiaBtn:hover{
-  /*color: rgba(85, 206, 141, .9);*/
   color: rgba(1,36,57, .8);
 }
 .aboutUsHomeBtn,.aboutUsHomeBtn:hover{
@@ -2688,14 +2656,12 @@ header.bg-transparent.bg-white .contactUsBtn {
     color: rgba(244,122,33,.8);
 }
 .yourDevelopersBtn,.yourDevelopersBtn:hover{
- /* color: #4b77a2;*/
   color: rgba(1,36,57, .8);
 }
 .whatWeDoBtn,.whatWeDoBtn:hover{
   color: #4b77a2;
 }
 .contactUsHomeBtn,.contactUsHomeBtn:hover{
-  /*color: #e98481;*/
   color: rgba(244,122,33,.8);
 }
 .mapImage{
@@ -2706,7 +2672,6 @@ footer p,
 footer a {
   font-size: 13px;
   line-height: 24px;
-  /*color: #767676;*/
   color: #212529;
   opacity: .6;
 }
@@ -2719,7 +2684,6 @@ footer .socialMedia a:hover{
 }
 
 footer svg:hover {
-  /*fill: #4ba9ff;*/
   fill: rgb(244, 122, 33);
 }
 
@@ -2752,13 +2716,11 @@ footer h3 {
 footer .links a {
   display: block;
   font-size: 13px;
-  /*color: #767676;*/
   color: #212529;
 }
 
 footer .links a:hover {
   font-size: 13px;
-  /*color: #4ba9ff;*/
   color: rgb(244, 122, 33);
   font-weight: 600;
   text-decoration: none;
@@ -2777,9 +2739,6 @@ footer span {
 footer .contactBoxes {
   display: -ms-inline-flexbox;
   display: inline-flex;
-  /*-ms-flex: 0 0 310px;
-  flex: 0 0 310px;
-  max-width: 310px;*/
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 1.5em;
