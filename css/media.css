@@ -17,7 +17,24 @@
 		overflow: auto;
 	}
 }
-
+@media screen and (min-width:1400px) {
+	footer{
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	footer .aboutUsWrap,footer .linksWrap{
+		margin-right:160px;
+	}
+	footer .divider{
+		margin: 0px 35px;
+	}
+	.extendedDevelopmentWrap{
+		padding:0px 70px;
+	}
+	footer .footerCopy{
+		margin: 34px 0 58px;
+	}
+}
 @media screen and (min-width:1300px) {
 	.leaderCaption .leaderCaptionText:last-child {
 		padding-left: 104px;

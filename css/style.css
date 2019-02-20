@@ -202,6 +202,7 @@ header.bg-transparent.bg-white .logoWrap p {
   position: relative;
   overflow: hidden;
   background: rgba(244,122,33,.8);
+  /*background-image:linear-gradient(120deg, rgba(244, 122, 33, 1), rgba(249, 182, 133, .96) 44%, rgba(247, 152, 85, .8) 63%, rgba(246, 138, 60, .6))*/
 }
 
 .readOurGuideBtn {
