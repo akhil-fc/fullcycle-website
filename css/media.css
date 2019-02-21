@@ -587,7 +587,7 @@
 	.skillBlock {
 		width: calc(50% - 30px);
 	}
-
+	
 	.skillBlock ul li .tab-dis-block {
 		display: inline-block;
 	}
