@@ -587,7 +587,7 @@
 	.skillBlock {
 		width: calc(50% - 30px);
 	}
-	
+
 	.skillBlock ul li .tab-dis-block {
 		display: inline-block;
 	}
@@ -598,7 +598,6 @@
 	header.bg-transparent .rightNavLinks  .navLink a {
 		color: #212529 !important;
 	}
-
 	.aboutPolandContainer .aboutPolandBox {
 		width: calc(50% - 30px);
 	}
@@ -1266,6 +1265,10 @@
 	}
 	.ourStoryContainer{
 		padding-bottom: 0px;
+	}
+	.yourDeveloperGradient .allBannerSection{
+		justify-content: flex-start;
+		padding-top: 120px;
 	}
 }
 
