@@ -479,7 +479,7 @@ header.bg-transparent.bg-white .logoWrap p {
       position: absolute;
       bottom: 0px;
       right: 0px;
-      width: 58%;
+      width: 90%;
       z-index: 9;
 }
 .sectionFourWrap .clientNames div:last-child{
@@ -1128,7 +1128,15 @@ header .rightNavLinks .navLink {
   background-position: 117% bottom;
   background-size: 52%;
 }
-
+.featuredJobs  .jobFDetail .contentDetail {
+    min-height: 685px;
+}
+.featuredJobs  .jobFDetail .contentDetail.min-height-717{
+  min-height: 717px;
+}
+.featuredJobs  .jobFDetail .contentDetail.min-height-733{
+  min-height: 733px;
+}
 h2.commonTitleh2 {
   font-weight: 400;
   font-size: 30px;
@@ -1700,9 +1708,9 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .lederShipWrap .bgImageWrap {
-  background-image: url(../images/main-persons.jpg);
+  background-image: url(../images/leaders_u_can.jpg);
   background-size: auto 98%;
-  background-position: right 92% top 20px;
+  background-position: right 92% top 0px;
   max-width: 620px;
   min-height: 330px;
   background-repeat: no-repeat;
@@ -1972,9 +1980,9 @@ header.bg-transparent.bg-white .contactUsBtn {
   position: absolute;
 }
 .carrersBannerWrap {
-  background-image: url(../images/carrerBanner.jpeg);
+  background-image: url(../images/our-story-1.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center bottom;
   height: 615px;
   position: relative;
   text-align: center;
@@ -2667,6 +2675,53 @@ header.bg-transparent.bg-white .contactUsBtn {
 .mapImage{
   width: 100%;
   height: auto;
+}
+.jobListing .jobFDetail h6{
+  font-weight: 700;
+  font-size: 18px;
+  color: #3b3b3b;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 23px;
+}
+.jobListing .jobFDetail .dot{
+  display: inline-block;
+  height: 6px;
+  background: #012439;
+  border-radius: 100%;
+  margin-right: 7px;
+  flex:0 0 6px;
+  max-width:6px;
+  position:relative;
+  top:10px;
+}
+.jobListing .jobFDetail > div p{
+  position:relative;
+  padding-left:12px;
+}
+.jobListing .jobFDetail > div p.subHeading{
+  padding-left:0px;
+}
+.jobListing .jobFDetail > div p.subHeading:before{
+  content:none;
+}
+.jobListing .jobFDetail > div p:before{
+  content:'';
+  position:absolute;
+  display: inline-block;
+  width:6px;
+  height: 6px;
+  background: #012439;
+  border-radius: 100%;
+  left:0px;
+  top: 8px;
+}
+.jobListing .jobFDetail > div p.content-none:before{
+  content:none;
+}
+.jobListing .jobFDetail > div p.content-none{
+  padding-left:0px;
 }
 footer p,
 footer a {

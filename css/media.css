@@ -74,7 +74,7 @@
 		top: auto;
 		bottom: 0px;
 		background-color: transparent;
-		background-image: linear-gradient(270deg, #f6f5f6, hsla(300, 5%, 96%, .72) 44%, hsla(300, 5%, 96%, 0) 60%, hsla(300, 5%, 96%, 0));
+		background-image: linear-gradient(270deg, #f6f5f6, hsla(300, 5%, 96%, .72) 100%, hsla(300, 5%, 96%, 0) 60%, hsla(300, 5%, 96%, 0));
 		padding: 5px 0 5px 30px;
 	}
 	.sliderContentWrap {
@@ -85,6 +85,7 @@
 }
 
 @media screen and (max-width:1024px) {
+
 	.extendedDevelopmentWrap {
 		padding: 0px 30px;
 	}
@@ -117,10 +118,9 @@
 
 	.lederShipWrap .bgImageWrap {
 		/*background-image: url(../images/boards-tablet.png);*/
-		background-size: auto 90%;
-		background-position: right 88% top 60px;
+		background-size:  100% auto;
+		background-position: right 88% bottom 60px;
 		max-width: 465px;
-		min-height: 494px;
 	}
 
 	#Leadership .ourStoryInner .ourStoryColumn:nth-child(2) {
@@ -252,7 +252,7 @@
 
 	header .toggleIcon {
 		display: block;
-		position: relative;		/*overflow: hidden;*/
+		position: relative;
 		margin: 0 10px 0 0;
 		padding: 0;
 		width: 26px;
@@ -306,8 +306,7 @@
 		transition: bottom .3s .3s, transform .3s 0s, background .3s ease, -webkit-transform .3s 0s;
 	}
 
-	header.bg-transparent.bg-white {
-	}
+	
 
 	.tab-dis-block {
 		display: block;
@@ -413,9 +412,7 @@
 		background-position: 15%;
 	}
 
-	/*.sectionTwoWrap {
-		background-image: url(../images/secondSectionTablet.jpg);
-	}*/
+	
 
 	.blueOverlay,
 	.darkBlueOverlay,
@@ -424,13 +421,7 @@
 		width: 100%;
 	}
 
-	/*.blueOverlay {
-		background: transparent;
-	}
-
-	.greenOverlay {
-		background: transparent;
-	}*/
+	
 
 	.overlayOrange {
 		background: rgba(237, 140, 61, .8);
@@ -566,7 +557,6 @@
 	}
 
 	.yourDeveloperGradient .allBannerSection {
-		/*background-image: url(../images/developers-small.png);*/
 		background-position: right bottom;
 		background-size: 50%;
 	}
