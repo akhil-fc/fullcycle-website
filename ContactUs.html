@@ -128,12 +128,12 @@
               <div class="cst-ContactMain-formSection" >
                  <div class="cst-ContactMain-form " >
                     <div class="cst-FormSection js-formSection" >
-                       <form  class="cst-contact-form"   action="https://formspree.io/akhil.pandey006@gmail.com" method="POST">
+                       <form  class="cst-contact-form"    method="POST">
                           <p ><input type="text"  name="name" placeholder="Name"  class="cst-InputText" ></p>
                           <p ><input type="email" required="" name="_replyto" placeholder="Email" class="cst-InputText"   ></p>
                           <p ><input type="text"  name="subject" placeholder="Subject"  class="cst-InputText" ></p>
                           <p ><textarea class="cst-TextArea" name="message" placeholder="Tell us about your development needs"  ></textarea></p>
-                          <p><input type="submit" value="Contact Us" class="cst-FormButton"></p>
+                          <p><input type="submit" value="Contact Us" class="cst-FormButton" id="contact-form-btn"></p>
                        </form>
                     </div>
                  </div>
@@ -145,6 +145,26 @@
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          $('#contact-form-btn').on('click', function(e) {
+             Email.send({
+                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                To : 'akhil.pandey006@gmail.com',
+                From : "_replyto",
+                Subject : "subject",
+                Body : "message",
+              Attachments : [
+              {
+                name : "smtpjs.png",
+                path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
+              }]
+            }).then(
+              message => alert(message)
+            );
+          })
+        </script>
+       
         <!-- <script >
           var $form = $('form#contact-form');
           var url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbzOTPs3PBBtWnZlQMJwaEGHfUMKrDygWMoXWgdHSlKEgXyQJw/exec'
