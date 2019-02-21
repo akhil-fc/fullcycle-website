@@ -1708,7 +1708,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 
 .lederShipWrap .bgImageWrap {
-  background-image: url(../images/leaders_u_can.jpg);
+  background-image: url(../images/leaders_u_can.png);
   background-size: auto 98%;
   background-position: right 92% top 0px;
   max-width: 620px;
@@ -1829,6 +1829,7 @@ header.bg-transparent.bg-white .contactUsBtn {
 .leaderCaption {
   display: -ms-flexbox;
   display: flex;
+  margin-top:35px;
 }
 
 .leaderCaption .leaderCaptionText:last-child {

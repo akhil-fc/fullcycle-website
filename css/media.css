@@ -41,8 +41,10 @@
 	}
 	.leaderCaption .leaderCaptionText:first-child {
 		padding-left: 0px;
+	}	
+	.yourDeveloperGradient .allBannerSection {
+	    background-size: 62%;
 	}
-
 }
 
 @media screen and (max-width:1440px) {
@@ -81,6 +83,14 @@
 		width: 100%;
 		max-width: 508px;
 	}
+	.lederShipWrap .ourStoryColumn{
+		z-index: 1;
+	}
+
+	.leaderCaption{
+		margin-top:0px;
+	}
+
 
 }
 
@@ -119,7 +129,7 @@
 	.lederShipWrap .bgImageWrap {
 		/*background-image: url(../images/boards-tablet.png);*/
 		background-size:  100% auto;
-		background-position: right 88% bottom 60px;
+		background-position: right 88% bottom 0px;
 		max-width: 465px;
 	}
 
@@ -1251,7 +1261,12 @@
 	.cst-ContactBox-image > img.second-img{
 		display:block;
 	}
-
+	.leaderMainCaptionContainer{
+		z-index: 1;
+	}
+	.ourStoryContainer{
+		padding-bottom: 0px;
+	}
 }
 
 @media screen and (max-width:520px) {
