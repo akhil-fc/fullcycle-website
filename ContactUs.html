@@ -172,9 +172,17 @@
             data: formData
           }).success( function(result){
             $('.sucessMsg').addClass('show');
-          }
+              setTimeout(function() {
+                $('.sucessMsg').removeClass('show');
+              }, 3000);
+              $('form.cst-contact-form').find("input[type=text], textarea,input[type=email]").val("");
+              $("form.cst-contact-form").trigger("reset");
+            }
           );
         })
+
+
+  
       </script>
     </body>
     </html>
