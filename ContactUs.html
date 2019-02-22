@@ -130,7 +130,7 @@
                     <div class="cst-FormSection js-formSection" >
                        <form  class="cst-contact-form"    method="POST">
                           <p ><input type="text"  name="name" placeholder="Name"  class="cst-InputText" ></p>
-                          <p ><input type="email" required="" name="_replyto" placeholder="Email" class="cst-InputText"   ></p>
+                          <p ><input type="email" required="" name="email" placeholder="Email" class="cst-InputText"   ></p>
                           <p ><input type="text"  name="subject" placeholder="Subject"  class="cst-InputText" ></p>
                           <p ><textarea class="cst-TextArea" name="message" placeholder="Tell us about your development needs"  ></textarea></p>
                           <p><input type="submit" value="Contact Us" class="cst-FormButton" id="contact-form-btn"></p>
@@ -139,46 +139,42 @@
                  </div>
               </div>
            </div>
+            <div class="sucessMsg">We will contact you soon!</div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-          $('#contact-form-btn').on('click', function(e) {
-             Email.send({
-                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-                To : 'akhil.pandey006@gmail.com',
-                From : "_replyto",
-                Subject : "subject",
-                Body : "message",
-              Attachments : [
-              {
-                name : "smtpjs.png",
-                path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
-              }]
-            }).then(
-              message => alert(message)
-            );
-          })
-        </script>
-       
-        <!-- <script >
-          var $form = $('form#contact-form');
-          var url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbzOTPs3PBBtWnZlQMJwaEGHfUMKrDygWMoXWgdHSlKEgXyQJw/exec'
-          $('#contact-form-btn').on('click', function(e) {
-            e.preventDefault();
-            var jqxhr = $.ajax({
-              url: url,
-              method: "GET",
-              dataType: "jsonp",
-              data: $form.serializeObject()
-            }).success(
-              console.log("success")
-            );
-          })
-        </script> -->
+      <script >
+        var formData  = {
+          name: '',
+          email: '',
+          // subject: '',
+          message: ''
+        };
+        var $form = $('form.cst-contact-form'),
+        url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';
+        
+
+        $('#contact-form-btn').on('click', function(e) {
+          e.preventDefault();
+          formData.name = $form.get(0)[0].value;
+          formData.email = $form.get(0)[1].value;
+          formData.subject = $form.get(0)[2].value;
+          formData.message = $form.get(0)[3].value;
+          console.log(formData);
+          var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: formData
+          }).success( function(result){
+            $('.sucessMsg').addClass('show');
+          }
+          );
+        })
+      </script>
     </body>
     </html>

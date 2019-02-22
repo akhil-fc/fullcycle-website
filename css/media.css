@@ -1273,6 +1273,11 @@
 }
 
 @media screen and (max-width:520px) {
+	.fulldelicatedMemberWrap .slide3 {
+		background-size: 100%;
+		background-position: bottom;
+	}
+
 	.carrersBannerWrap .aboutUsContainer .bannerDetail {
 		max-width: 300px;
 	}
