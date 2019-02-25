@@ -2,9 +2,9 @@
 	.section {
 		height: 600px;
 	}
-	#slide1.section .recentlyPublishedWrap {
+	/*#slide1.section .recentlyPublishedWrap {
 		height: calc(100% - 116px);
-	}
+	}*/
 	.rightNavLinks.show ul {
 		height: 400px;
 		overflow: auto;
@@ -1431,4 +1431,36 @@
 		max-width: 240px;
 	}
 
+}
+
+@media (max-width: 767px) and  (orientation:landscape) {
+  .whatWeDoWrap .bannerImage img {
+  	height: 100%;
+  	max-width: 39vw;
+  }
+  .bannerDetail{
+    max-width: 320px;
+  }
+  .allBannerSection .pageTitle{
+    font-size: 25px;
+  }
+  .allBannerSection .preDescription{
+    font-size: 14px;
+  }
+  .allBannerSection{
+    padding-top: 79px;
+  }
+ .yourDeveloperGradient .allBannerSection {
+	background-position: right bottom;
+	background-size: 36vw;
+ }	
+ .polandImageWrap{
+ 	width: 38vw;
+ }
+ .aboutBannerImageWrap{
+ 	width: calc(45% - 50px);
+ }
+ .aboutUsContainer .bannerDetail {
+    width: 62%;
+ }
 }
