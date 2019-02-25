@@ -155,8 +155,7 @@
           message: ''
         };
         var $form = $('form.cst-contact-form'),
-        url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';
-        
+        url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';    
 
         $('#contact-form-btn').on('click', function(e) {
           e.preventDefault();
@@ -164,7 +163,6 @@
           formData.email = $form.get(0)[1].value;
           formData.subject = $form.get(0)[2].value;
           formData.message = $form.get(0)[3].value;
-          
           var jqxhr = $.ajax({
             url: url,
             method: "GET",
@@ -180,8 +178,6 @@
             }
           );
         })
-
-
   
       </script>
     </body>
