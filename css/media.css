@@ -1200,7 +1200,6 @@
 		font-size: 13px;
 		line-height: 16px;
 	}
-
 	.featuredJobs {
 		padding: 40px 0 40px 0;
 	}
@@ -1269,6 +1268,23 @@
 	.yourDeveloperGradient .allBannerSection{
 		justify-content: flex-start;
 		padding-top: 120px;
+	}	
+	/*.whatWeDoWrap .bannerDetail{
+	 	justify-content: flex-start;
+		padding-top: 130px;
+	}*/
+	.whatWeDoWrap .yourDeveloperGradient .bannerDetail{
+		-ms-flex-pack: flex-start;
+		justify-content: flex-start;
+	}
+	.whatWeDoWrap .bannerDetail.mobileJustifyContentStart{
+		-ms-flex-pack: flex-start;
+		justify-content: flex-start;
+		padding-top: 120px;
+	}
+	.mobileJustifyContentStart .bannerImage img{
+		height: 50vh;
+		max-height: 50vh;
 	}
 }
 
@@ -1381,6 +1397,10 @@
 	}
 	.sectionFourWrap{
 		background-position: 30% 0;
+	}
+	.mobileJustifyContentStart .bannerImage img{
+		height: 50vh;
+		max-height: 50vh;
 	}
 }
 
