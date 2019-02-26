@@ -1286,6 +1286,9 @@
 		height: 50vh;
 		max-height: 50vh;
 	}
+	.contactFormJoshImg{
+		top: 10px;
+	}
 }
 
 @media screen and (max-width:520px) {

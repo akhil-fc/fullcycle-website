@@ -1167,7 +1167,7 @@ p.commonDetailPara {
   background-position: bottom, bottom;
   background-size: 100% auto, contain;
   background-repeat: no-repeat, no-repeat;
-  padding-bottom: 45vw;
+  padding-bottom: 53vw;
 }
 
 .slidingWrap {
@@ -1385,7 +1385,7 @@ footer .contactBoxes img.leadersImg2{
 }
 
 .fulldelicatedMemberWrap  .slide2 {
-  background: url(../images/dev3.jpg);
+  background: url(../images/dev3.png);
   background-size: contain;
   background-position: 50%;
   height: 100%;
