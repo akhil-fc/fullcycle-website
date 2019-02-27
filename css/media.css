@@ -719,6 +719,7 @@
 }
 
 @media screen and (max-width:767px) {
+
 	.mobile-dis-none {
 		display: none;
 	}
@@ -1268,11 +1269,8 @@
 	.yourDeveloperGradient .allBannerSection{
 		justify-content: flex-start;
 		padding-top: 120px;
-	}	
-	/*.whatWeDoWrap .bannerDetail{
-	 	justify-content: flex-start;
-		padding-top: 130px;
-	}*/
+	}
+	
 	.whatWeDoWrap .yourDeveloperGradient .bannerDetail{
 		-ms-flex-pack: flex-start;
 		justify-content: flex-start;
@@ -1288,6 +1286,9 @@
 	}
 	.contactFormJoshImg{
 		top: 10px;
+	}
+	footer .leadersImg2{
+		margin-left: 5px!important;
 	}
 }
 
