@@ -2720,9 +2720,11 @@ header.bg-transparent.bg-white .contactUsBtn {
 }
 .jobListing .jobFDetail > div p.content-none:before{
   content:none;
+
 }
 .jobListing .jobFDetail > div p.content-none{
   padding-left:0px;
+  margin-top: 10px;
 }
 footer p,
 footer a {

@@ -34,11 +34,13 @@
 	footer .footerCopy{
 		margin: 34px 0 58px;
 	}
+
 }
+
 @media screen and (min-width:1300px) {
-	.leaderCaption .leaderCaptionText:last-child {
+	/*.leaderCaption .leaderCaptionText:last-child {
 		padding-left: 104px;
-	}
+	}*/
 	.leaderCaption .leaderCaptionText:first-child {
 		padding-left: 0px;
 	}	
@@ -51,6 +53,19 @@
 	.carrersBannerWrap .aboutUsContainer .bannerDetail {
 		width: auto;
 		max-width: 650px;
+	}
+}
+@media screen and (max-width:1400px){
+	.leaderCaption{
+		width: 44%;
+	}
+}
+@media screen and (max-width:1300px){
+	.leaderCaption .leaderCaptionText:last-child {
+		padding-left: 150px;
+	}
+	.leaderCaption .leaderCaptionText:first-child {
+    	padding-left: 0px;
 	}
 }
 
