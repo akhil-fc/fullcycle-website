@@ -1287,7 +1287,7 @@
 	.contactFormJoshImg{
 		top: 10px;
 	}
-	footer .leadersImg2{
+	footer .contactBoxes:last-child .leadersImg2{
 		margin-left: 5px!important;
 	}
 }
