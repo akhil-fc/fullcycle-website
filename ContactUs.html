@@ -130,9 +130,9 @@
                  <div class="cst-ContactMain-form " >
                     <div class="cst-FormSection js-formSection" >
                        <form  class="cst-contact-form"    method="POST">
-                          <p ><input type="text"  name="name" placeholder="Name"  class="cst-InputText" ></p>
-                          <p ><input type="email" required  name="email" placeholder="Email" class="cst-InputText"   ></p>
-                          <p ><input type="text"  name="subject" placeholder="Subject"  class="cst-InputText" ></p>
+                          <p ><input type="text"  name="name" id='name' placeholder="Name"  class="cst-InputText" ></p>
+                          <p ><input type="email"   name="email" id="field" placeholder="Email" class="cst-InputText"   /></p>
+                          <p ><input type="text"  name="subject" id="subject" placeholder="Subject"  class="cst-InputText"  /></p>
                           <p ><textarea class="cst-TextArea" name="message" placeholder="Tell us about your development needs"  ></textarea></p>
                           <p><input type="submit" value="Contact Us" class="cst-FormButton" id="contact-form-btn"></p>
                        </form>
@@ -142,44 +142,69 @@
            </div>
             <div class="sucessMsg">We will contact you soon!</div>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
-      <script >
-        var formData  = {
-          name: '',
-          email: '',
-          // subject: '',
-          message: ''
-        };
-        var $form = $('form.cst-contact-form'),
-        url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';    
+        <script >  
+          var formData  = {
+            name: '',
+            email: '',
+            // subject: '',
+            message: ''
+          };
+          var $form = $('form.cst-contact-form'),
+          url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';   
+    
+        
+          $("form").validate({
+              rules: {
+                  name: "required",
+                  email: "required",
+                  message: "required"
+              },
+              messages: {
+                name: {
+                  required: "Please Enter Your Name.",
+                },
+                message: {
+                  required: "Please Enter Your Message.",
+                },
+                  email: {
+                      required: "Please Enter Your Email",
+                      email: "Please enter a valid email address.",
+                  }
 
-        $('#contact-form-btn').on('click', function(e) {
-          e.preventDefault();
-          formData.name = $form.get(0)[0].value;
-          formData.email = $form.get(0)[1].value;
-          formData.subject = $form.get(0)[2].value;
-          formData.message = $form.get(0)[3].value;
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: formData
-          }).success( function(result){
-          //   $('.sucessMsg').addClass('show');
-          //     setTimeout(function() {
-          //       $('.sucessMsg').removeClass('show');
-          //     }, 3000);
-          //     $('form.cst-contact-form').find("input[type=text], textarea,input[type=email]").val("");
-          //     $("form.cst-contact-form").trigger("reset");
-          //   }
-          // );
-        })
-  
-      </script>
-    </body>
-    </html>
+              }
+          })
+          $('#contact-form-btn').on('click', function(e) {
+          // console.log($("form").valid()); 
+          if($("form").valid() == true){
+                e.preventDefault();
+                formData.name = $form.get(0)[0].value;
+                formData.email = $form.get(0)[1].value;
+                formData.subject = $form.get(0)[2].value;
+                formData.message = $form.get(0)[3].value;
+
+                var jqxhr = $.ajax({
+                  url: url,
+                  method: "GET",
+                  dataType: "json",
+                  data: formData
+                }).success( function(result){
+              $('.sucessMsg').addClass('show');
+                setTimeout(function() {
+                  $('.sucessMsg').removeClass('show');
+                }, 3000);
+                $('form.cst-contact-form').find("input[type=text], textarea,input[type=email]").val("");
+                $("form.cst-contact-form").trigger("reset");
+              }
+          );
+        }          
+      })    
+    </script>
+  </body>
+</html>
