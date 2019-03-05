@@ -131,7 +131,7 @@
                     <div class="cst-FormSection js-formSection" >
                        <form  class="cst-contact-form"    method="POST">
                           <p ><input type="text"  name="name" placeholder="Name"  class="cst-InputText" ></p>
-                          <p ><input type="email" required="" name="email" placeholder="Email" class="cst-InputText"   ></p>
+                          <p ><input type="email" required  name="email" placeholder="Email" class="cst-InputText"   ></p>
                           <p ><input type="text"  name="subject" placeholder="Subject"  class="cst-InputText" ></p>
                           <p ><textarea class="cst-TextArea" name="message" placeholder="Tell us about your development needs"  ></textarea></p>
                           <p><input type="submit" value="Contact Us" class="cst-FormButton" id="contact-form-btn"></p>
@@ -170,14 +170,14 @@
             dataType: "json",
             data: formData
           }).success( function(result){
-            $('.sucessMsg').addClass('show');
-              setTimeout(function() {
-                $('.sucessMsg').removeClass('show');
-              }, 3000);
-              $('form.cst-contact-form').find("input[type=text], textarea,input[type=email]").val("");
-              $("form.cst-contact-form").trigger("reset");
-            }
-          );
+          //   $('.sucessMsg').addClass('show');
+          //     setTimeout(function() {
+          //       $('.sucessMsg').removeClass('show');
+          //     }, 3000);
+          //     $('form.cst-contact-form').find("input[type=text], textarea,input[type=email]").val("");
+          //     $("form.cst-contact-form").trigger("reset");
+          //   }
+          // );
         })
   
       </script>
