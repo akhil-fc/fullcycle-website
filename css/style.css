@@ -184,8 +184,8 @@ header.bg-transparent.bg-white .logoWrap p {
 }
 
 #slide1 {
-  /*background-image: url('../images/firstSection.jpg');*/
-  background-image: url(../images/secondSectionLarge.jpg);
+  background-image: url('../images/firstSection.jpg');
+  
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 100% 0;
   background-size: cover;
