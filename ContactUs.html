@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <link rel="icon" type="image/png" href="images/favicon.png" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/proxima-nova.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -157,10 +160,10 @@
             message: ''
           };
           var $form = $('form.cst-contact-form'),
-          url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';   
+          url = 'https://script.google.com/a/full-cycle.com/macros/s/AKfycbyttCJ3v6ALc6NPjVf5V-9c1qeHR0B9pJtiPQFN/exec';  
     
         
-          $("form").validate({
+          $(".cst-contact-form").validate({
               rules: {
                   name: "required",
                   email: "required",
@@ -177,18 +180,16 @@
                       required: "Please Enter Your Email",
                       email: "Please enter a valid email address.",
                   }
-
               }
           })
           $('#contact-form-btn').on('click', function(e) {
           // console.log($("form").valid()); 
-          if($("form").valid() == true){
+          if($(".cst-contact-form").valid() == true){
                 e.preventDefault();
                 formData.name = $form.get(0)[0].value;
                 formData.email = $form.get(0)[1].value;
                 formData.subject = $form.get(0)[2].value;
                 formData.message = $form.get(0)[3].value;
-
                 var jqxhr = $.ajax({
                   url: url,
                   method: "GET",
