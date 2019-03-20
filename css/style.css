@@ -2973,3 +2973,6 @@ footer .fbIcon {
 .error{
     color: red;
 }
+.companiesBlock .commonTitleh2 span{
+  display: block;
+}
